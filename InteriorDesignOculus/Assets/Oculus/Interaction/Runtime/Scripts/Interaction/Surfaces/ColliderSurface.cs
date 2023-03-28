@@ -27,7 +27,7 @@ namespace Oculus.Interaction.Surfaces
         [Tooltip("The Surface will be represented by this collider.")]
         [SerializeField]
         private Collider _collider;
-
+        
         protected virtual void Start()
         {
             this.AssertField(_collider, nameof(_collider));
@@ -47,6 +47,8 @@ namespace Oculus.Interaction.Surfaces
                 hit.Point = hitInfo.point;
                 hit.Normal = hitInfo.normal;
                 hit.Distance = hitInfo.distance;
+                //_handRayInteractor.
+                //print("INFO: " + hit.Point + hit.Normal);
                 return true;
             }
 

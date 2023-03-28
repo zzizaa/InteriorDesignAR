@@ -147,6 +147,7 @@ namespace Oculus.Interaction
                     _movementHitDelta = PoseUtils.Delta(_movement.Pose, hitPose);
                 }
             }
+
             base.InteractableSelected(interactable);
         }
 

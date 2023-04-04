@@ -46,13 +46,21 @@ public class ModelPersonalization : MonoBehaviour
     public void ChangeMaterialOnSelection()
     {
         gameObject.GetComponent<MeshRenderer>().material = _selectedMaterial;
-        //When selected the model should change material and move with the raycast on the floor    
+        //When selected the model should change material
+        //Get all childrens with a Mesh Renderer and change all the materials    
+        MeshRenderer[] rs = GetComponentsInChildren<MeshRenderer>();
+        foreach(MeshRenderer r in rs)
+            r.material = _selectedMaterial;
     }
 
     public void ChangeMaterialOnPositioning()
     {
         //Reselect the main material of the model
         gameObject.GetComponent<MeshRenderer>().material = _material;
+        //Reset all the materials for all childrens
+        MeshRenderer[] rs = GetComponentsInChildren<MeshRenderer>();
+        foreach(MeshRenderer r in rs)
+            r.material = _material;
     }
     public void ActivateCanvas()
     {

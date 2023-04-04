@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class RayMovement : MonoBehaviour
 {
-    private GameObject _modelToMove;
+    [SerializeField] private GameObject _modelToMove;
     [SerializeField] private GameObject _floor;
     [SerializeField] private ColliderSurface _floorSurface;
     [SerializeField] private RayInteractor _rayInteractor;
@@ -16,6 +16,7 @@ public class RayMovement : MonoBehaviour
     {
         print("Oggetto selezionato " + model.name);
         _modelToMove = model;
+        print("Oggetto assegnato " + _modelToMove.name);
     }
 
     public void DeselectObject()
@@ -41,8 +42,17 @@ public class RayMovement : MonoBehaviour
         else
         {
             _modelToMove.transform.position = rayInteractor.CollisionInfo.Value.Point;
+            print("POSIZIONE DEL MODELLO: " + _modelToMove.transform.position);
+            ResetMaterial();
+            DeselectObject();
+            
             //_modelToMove.transform.position = _rayInteractor.CollisionInfo.Value.Point;
         }
+    }
+
+    public void ResetMaterial()
+    {
+        _modelToMove.GetComponentInChildren<ModelPersonalization>().ChangeMaterialOnPositioning();
     }
     
 }

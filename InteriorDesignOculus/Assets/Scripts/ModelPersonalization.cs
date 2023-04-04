@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Oculus.Interaction;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +14,14 @@ public class ModelPersonalization : MonoBehaviour
     [SerializeField] private GameObject _player;
     [SerializeField] private Transform _basePoint;
     [SerializeField] private GameObject _rotationCanvas;
+    private GameObject handRayInteractor;
 
+
+    private void Start()
+    {
+        _player = GameObject.FindWithTag("Player");
+        handRayInteractor = GameObject.FindWithTag("HandRayInteractor");
+    }
 
     /*private void Update()
     {
@@ -24,6 +32,12 @@ public class ModelPersonalization : MonoBehaviour
     {
         gameObject.transform.RotateAround(gameObject.transform.position, gameObject.transform.up, rotationAngle);
     }*/
+
+    public void SelectObject(GameObject parentGameObject)
+    {
+        print("Object to Spawn: " + parentGameObject.name);
+        handRayInteractor.GetComponent<RayMovement>().SelectObject(parentGameObject);
+    }
     public void ChangeColor()
     {
         _material.color = new Color(_sliders[0].value, _sliders[1].value, _sliders[2].value);

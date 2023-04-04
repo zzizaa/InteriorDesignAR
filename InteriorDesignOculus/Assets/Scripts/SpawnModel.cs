@@ -1,13 +1,21 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpawnModel : MonoBehaviour
 {
     [SerializeField] private GameObject _chair;
     [SerializeField] private Transform spawningPoint;
+    [SerializeField] private List<ModelScriptableObject> _models;
+    [SerializeField] private GameObject _model;
     
+
+    public void SelectModel(int i)
+    {
+        Instantiate(_models[i].model, _model.transform.position, Quaternion.identity);
+    }
     public void SpawnChair()
     {
         print("Chair Spawned");

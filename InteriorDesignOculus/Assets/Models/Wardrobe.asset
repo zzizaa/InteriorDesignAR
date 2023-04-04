@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wardrobe
   m_EditorClassIdentifier: 
   modelName: 
-  model: {fileID: 450861233927158774, guid: b679495352b23b7459854a200338c1b6, type: 3}
+  model: {fileID: 2580871515332057731, guid: 08454e14168535b4ea59d6d9d392b5d2, type: 3}
   modelMesh: {fileID: 0}
   modelMaterial: {fileID: 0}
   interactingMaterial: {fileID: 0}

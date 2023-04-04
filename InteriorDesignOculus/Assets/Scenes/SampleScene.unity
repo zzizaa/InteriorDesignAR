@@ -258,28 +258,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 206183206}
   m_CullTransparentMesh: 1
---- !u!114 &338081998 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5724819078917629556, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
-  m_PrefabInstance: {fileID: 5724819077755362324}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4733c5f009d26ad49b3685117b8d3eb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &338082002 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5724819078917629567, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
-  m_PrefabInstance: {fileID: 5724819077755362324}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b72244af1e20ef40ad60aab01b3d253, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &434143618
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,49 +2429,13 @@ MonoBehaviour:
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 338082002}
+      - m_Target: {fileID: 784966740}
         m_TargetAssemblyTypeName: RayMovement, Assembly-CSharp
         m_MethodName: GetRayCastHitPoint
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1979815123}
           m_ObjectArgumentAssemblyTypeName: Oculus.Interaction.RayInteractor, Oculus.Interaction
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 784966740}
-        m_TargetAssemblyTypeName: RayMovement, Assembly-CSharp
-        m_MethodName: DeselectObject
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 338082002}
-        m_TargetAssemblyTypeName: RayMovement, Assembly-CSharp
-        m_MethodName: GetRayCastHitPoint
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 338081998}
-          m_ObjectArgumentAssemblyTypeName: Oculus.Interaction.RayInteractor, Oculus.Interaction
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 338082002}
-        m_TargetAssemblyTypeName: RayMovement, Assembly-CSharp
-        m_MethodName: DeselectObject
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

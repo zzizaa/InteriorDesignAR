@@ -42,7 +42,12 @@ public class ModelPersonalization : MonoBehaviour
     {
         _material.color = new Color(_sliders[0].value, _sliders[1].value, _sliders[2].value);
     }
-    
+
+    public void ChangeMaterial()
+    {
+        //Cambiare il materiale del modello dall'interfaccio, modificare i riferimenti ai materiali e accedere
+        //agli ScriptableObject dei Modelli
+    }
     public void ChangeMaterialOnSelection()
     {
         gameObject.GetComponent<MeshRenderer>().material = _selectedMaterial;

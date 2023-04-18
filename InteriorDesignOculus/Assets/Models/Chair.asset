@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modelName: Chair
   model: {fileID: 1486660999249407264, guid: 669c43a32374fee4aa3deb362f198f9c, type: 3}
+  image: {fileID: 21300000, guid: 468311165def411498470e5947d3d87a, type: 3}
   modelMesh: {fileID: 2954858793080512207, guid: 9dc0aaaee81a35e4aba37dc5614a2d04, type: 3}
   modelMaterial: {fileID: 2100000, guid: 87073ccd4e8de2c4bb9a8c93e1ad9081, type: 2}
   interactingMaterial: {fileID: 2100000, guid: 503a1caa54c0c894cbca7a947154a08a, type: 2}

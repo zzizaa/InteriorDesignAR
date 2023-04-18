@@ -7,6 +7,7 @@ public class ModelScriptableObject : ScriptableObject
 {
     public string modelName;
     public GameObject model;
+    public Sprite image;
     public Mesh modelMesh;
     public Material modelMaterial;
     public Material interactingMaterial;

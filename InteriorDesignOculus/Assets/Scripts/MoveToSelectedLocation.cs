@@ -4,10 +4,5 @@ using UnityEngine;
 
 public class MoveToSelectedLocation : MonoBehaviour
 {
-    //When Select() get the point of interaction and move the object previewsly selected to that location
-
-    public void MoveObject()
-    {
-        
-    }
+    //Set the floor to the floor level from OVRCameraRig
 }

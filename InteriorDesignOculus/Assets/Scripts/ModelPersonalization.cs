@@ -4,23 +4,24 @@ using System.Collections.Generic;
 using Oculus.Interaction;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class ModelPersonalization : MonoBehaviour
 {
     [SerializeField] private GameObject _canvas;
-    [SerializeField] private Material _material;
+     public Material material;
     [SerializeField] private Material _selectedMaterial;
     [SerializeField] private List<Slider> _sliders;
     [SerializeField] private GameObject _player;
     [SerializeField] private Transform _basePoint;
     [SerializeField] private GameObject _rotationCanvas;
     private GameObject handRayInteractor;
+    private GameObject _menuManager;
 
 
     private void Start()
     {
         _player = GameObject.FindWithTag("Player");
         handRayInteractor = GameObject.FindWithTag("HandRayInteractor");
+        _menuManager = GameObject.FindWithTag("MenuManager");
     }
 
     /*private void Update()
@@ -40,7 +41,7 @@ public class ModelPersonalization : MonoBehaviour
     }
     public void ChangeColor()
     {
-        _material.color = new Color(_sliders[0].value, _sliders[1].value, _sliders[2].value);
+        material.color = new Color(_sliders[0].value, _sliders[1].value, _sliders[2].value);
     }
 
     public void ChangeMaterial()
@@ -60,12 +61,14 @@ public class ModelPersonalization : MonoBehaviour
 
     public void ChangeMaterialOnPositioning()
     {
+        //ERRORE: quando si seleziona un altra sedia riposizionandala prenderà il materiale dell'ultima sedia fatta spawnare
+        //SOLUZIONE: quando un modella viene selezionato estrarne i materiali e poi riapplicarli
         //Reselect the main material of the model
-        gameObject.GetComponent<MeshRenderer>().material = _material;
+        gameObject.GetComponent<MeshRenderer>().material = _menuManager.GetComponent<MenuManager>().choosedMaterial;
         //Reset all the materials for all childrens
         MeshRenderer[] rs = GetComponentsInChildren<MeshRenderer>();
         foreach(MeshRenderer r in rs)
-            r.material = _material;
+            r.material = _menuManager.GetComponent<MenuManager>().choosedMaterial;
     }
     public void ActivateCanvas()
     {

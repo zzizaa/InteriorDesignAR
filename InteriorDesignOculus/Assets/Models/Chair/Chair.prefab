@@ -103,6 +103,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2134289274710011864, guid: cd6065e80bd917a429ac58bfbbcb9ab8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fdc83a2ac930c52459d99c82f0fefc80, type: 2}
     - target: {fileID: 7673485834248243125, guid: cd6065e80bd917a429ac58bfbbcb9ab8, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 2

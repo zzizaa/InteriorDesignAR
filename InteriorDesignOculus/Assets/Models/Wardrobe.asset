@@ -16,5 +16,12 @@ MonoBehaviour:
   model: {fileID: 2580871515332057731, guid: 08454e14168535b4ea59d6d9d392b5d2, type: 3}
   image: {fileID: 21300000, guid: b999d25267eba164399ad8f6f47d2393, type: 3}
   modelMesh: {fileID: 0}
-  modelMaterial: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 1b68ffca77c4c6344af03830dbeca2ca, type: 2}
+  - {fileID: 2100000, guid: dd331cc38e3258643bf0d3d221718362, type: 2}
+  - {fileID: 2100000, guid: c5de2de29649946caa67f57a9825cfd6, type: 2}
+  materialsName:
+  - Blue
+  - Graffiti
+  - FloorWood
   interactingMaterial: {fileID: 0}

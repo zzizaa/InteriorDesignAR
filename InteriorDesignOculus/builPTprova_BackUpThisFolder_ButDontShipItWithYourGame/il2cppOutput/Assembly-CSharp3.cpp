@@ -1258,6 +1258,11 @@ struct ExecuteEvents_t74DCF8B83743EE2773ACF182344612A048E2CC59  : public Runtime
 {
 };
 
+// Pixelplacement.MathUtilities
+struct MathUtilities_t6921F71109E451021C8A3172FDA42AD80A04B6F7  : public RuntimeObject
+{
+};
+
 // System.Reflection.MemberInfo
 struct MemberInfo_t  : public RuntimeObject
 {
@@ -5673,6 +5678,10 @@ struct ExecuteEvents_t74DCF8B83743EE2773ACF182344612A048E2CC59_StaticFields
 
 // UnityEngine.EventSystems.ExecuteEvents
 
+// Pixelplacement.MathUtilities
+
+// Pixelplacement.MathUtilities
+
 // OVRBoneCapsule
 
 // OVRBoneCapsule
@@ -9514,6 +9523,172 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D2
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Quaternion_Dot_mF9D3BE33940A47979DADA7E81650AEB356D5D12B_inline (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_a, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___1_b, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Quaternion::IsEqualUsingDot(System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Quaternion_IsEqualUsingDot_m9C672201C918C2D1E739F559DBE4406F95997CBD_inline (float ___0_dot, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Boolean Pixelplacement.MathUtilities::AreLinesIntersecting(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MathUtilities_AreLinesIntersecting_m81816172FA67C1D5BB2F1A26627526CBA468C109 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_l1_p1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_l1_p2, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_l2_p1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_l2_p2, bool ___4_shouldIncludeEndPoints, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	float V_3 = 0.0f;
+	{
+		// bool isIntersecting = false;
+		V_0 = (bool)0;
+		// float denominator = (l2_p2.z - l2_p1.z) * (l1_p2.x - l1_p1.x) - (l2_p2.x - l2_p1.x) * (l1_p2.z - l1_p1.z);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___3_l2_p2;
+		float L_1 = L_0.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___2_l2_p1;
+		float L_3 = L_2.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___1_l1_p2;
+		float L_5 = L_4.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_l1_p1;
+		float L_7 = L_6.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___3_l2_p2;
+		float L_9 = L_8.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___2_l2_p1;
+		float L_11 = L_10.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = ___1_l1_p2;
+		float L_13 = L_12.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = ___0_l1_p1;
+		float L_15 = L_14.___z_4;
+		V_1 = ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_1, L_3)), ((float)il2cpp_codegen_subtract(L_5, L_7)))), ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_9, L_11)), ((float)il2cpp_codegen_subtract(L_13, L_15))))));
+		// if (denominator != 0f)
+		float L_16 = V_1;
+		if ((((float)L_16) == ((float)(0.0f))))
+		{
+			goto IL_0103;
+		}
+	}
+	{
+		// float u_a = ((l2_p2.x - l2_p1.x) * (l1_p1.z - l2_p1.z) - (l2_p2.z - l2_p1.z) * (l1_p1.x - l2_p1.x)) / denominator;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = ___3_l2_p2;
+		float L_18 = L_17.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = ___2_l2_p1;
+		float L_20 = L_19.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = ___0_l1_p1;
+		float L_22 = L_21.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23 = ___2_l2_p1;
+		float L_24 = L_23.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25 = ___3_l2_p2;
+		float L_26 = L_25.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27 = ___2_l2_p1;
+		float L_28 = L_27.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29 = ___0_l1_p1;
+		float L_30 = L_29.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31 = ___2_l2_p1;
+		float L_32 = L_31.___x_2;
+		float L_33 = V_1;
+		V_2 = ((float)(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_18, L_20)), ((float)il2cpp_codegen_subtract(L_22, L_24)))), ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_26, L_28)), ((float)il2cpp_codegen_subtract(L_30, L_32))))))/L_33));
+		// float u_b = ((l1_p2.x - l1_p1.x) * (l1_p1.z - l2_p1.z) - (l1_p2.z - l1_p1.z) * (l1_p1.x - l2_p1.x)) / denominator;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34 = ___1_l1_p2;
+		float L_35 = L_34.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = ___0_l1_p1;
+		float L_37 = L_36.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = ___0_l1_p1;
+		float L_39 = L_38.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = ___2_l2_p1;
+		float L_41 = L_40.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42 = ___1_l1_p2;
+		float L_43 = L_42.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_44 = ___0_l1_p1;
+		float L_45 = L_44.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_46 = ___0_l1_p1;
+		float L_47 = L_46.___x_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_48 = ___2_l2_p1;
+		float L_49 = L_48.___x_2;
+		float L_50 = V_1;
+		V_3 = ((float)(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_35, L_37)), ((float)il2cpp_codegen_subtract(L_39, L_41)))), ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_43, L_45)), ((float)il2cpp_codegen_subtract(L_47, L_49))))))/L_50));
+		// if (shouldIncludeEndPoints)
+		bool L_51 = ___4_shouldIncludeEndPoints;
+		if (!L_51)
+		{
+			goto IL_00e1;
+		}
+	}
+	{
+		// if (u_a >= 0f && u_a <= 1f && u_b >= 0f && u_b <= 1f)
+		float L_52 = V_2;
+		if ((!(((float)L_52) >= ((float)(0.0f)))))
+		{
+			goto IL_0103;
+		}
+	}
+	{
+		float L_53 = V_2;
+		if ((!(((float)L_53) <= ((float)(1.0f)))))
+		{
+			goto IL_0103;
+		}
+	}
+	{
+		float L_54 = V_3;
+		if ((!(((float)L_54) >= ((float)(0.0f)))))
+		{
+			goto IL_0103;
+		}
+	}
+	{
+		float L_55 = V_3;
+		if ((!(((float)L_55) <= ((float)(1.0f)))))
+		{
+			goto IL_0103;
+		}
+	}
+	{
+		// isIntersecting = true;
+		V_0 = (bool)1;
+		goto IL_0103;
+	}
+
+IL_00e1:
+	{
+		// if (u_a > 0f && u_a < 1f && u_b > 0f && u_b < 1f)
+		float L_56 = V_2;
+		if ((!(((float)L_56) > ((float)(0.0f)))))
+		{
+			goto IL_0103;
+		}
+	}
+	{
+		float L_57 = V_2;
+		if ((!(((float)L_57) < ((float)(1.0f)))))
+		{
+			goto IL_0103;
+		}
+	}
+	{
+		float L_58 = V_3;
+		if ((!(((float)L_58) > ((float)(0.0f)))))
+		{
+			goto IL_0103;
+		}
+	}
+	{
+		float L_59 = V_3;
+		if ((!(((float)L_59) < ((float)(1.0f)))))
+		{
+			goto IL_0103;
+		}
+	}
+	{
+		// isIntersecting = true;
+		V_0 = (bool)1;
+	}
+
+IL_0103:
+	{
+		// return isIntersecting;
+		bool L_60 = V_0;
+		return L_60;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"

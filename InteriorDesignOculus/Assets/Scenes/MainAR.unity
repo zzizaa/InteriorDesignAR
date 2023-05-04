@@ -1634,6 +1634,30 @@ PrefabInstance:
       propertyPath: expandMixedRealityCapturePropertySheet
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5724819078353913308, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724819078353913308, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724819078353913308, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724819078428692045, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724819078428692045, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724819078428692045, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5724819078917629567, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
       propertyPath: _floor
       value: 
@@ -1642,6 +1666,18 @@ PrefabInstance:
       propertyPath: _floorSurface
       value: 
       objectReference: {fileID: 1489495419}
+    - target: {fileID: 5724819079050186969, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724819079050186969, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724819079050186969, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
 --- !u!1 &5724819077755362325 stripped

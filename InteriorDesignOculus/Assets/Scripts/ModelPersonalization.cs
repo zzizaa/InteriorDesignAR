@@ -6,13 +6,13 @@ using UnityEngine;
 using UnityEngine.UI;
 public class ModelPersonalization : MonoBehaviour
 {
-    [SerializeField] private GameObject _canvas;
+    //[SerializeField] private GameObject _canvas;
      public Material material;
     [SerializeField] private Material _selectedMaterial;
     [SerializeField] private List<Slider> _sliders;
     [SerializeField] private GameObject _player;
     [SerializeField] private Transform _basePoint;
-    [SerializeField] private GameObject _rotationCanvas;
+    //[SerializeField] private GameObject _rotationCanvas;
     private GameObject handRayInteractor;
     private GameObject _menuManager;
 
@@ -70,6 +70,16 @@ public class ModelPersonalization : MonoBehaviour
         foreach(MeshRenderer r in rs)
             r.material = _menuManager.GetComponent<MenuManager>().choosedMaterial;
     }
+
+    public void DisableRayInteractableScript()
+    {
+        handRayInteractor.GetComponent<RayMovement>()._rayInteractableComponent =
+            gameObject.GetComponent<RayInteractable>();
+        gameObject.GetComponent<RayInteractable>().enabled = false;
+       
+    }
+    
+    /*
     public void ActivateCanvas()
     {
         _canvas.SetActive(true);
@@ -79,6 +89,7 @@ public class ModelPersonalization : MonoBehaviour
     {
         _canvas.SetActive(false);
     }
+    */
 }
 
 

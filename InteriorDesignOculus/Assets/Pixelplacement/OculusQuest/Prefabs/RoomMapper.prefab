@@ -1129,6 +1129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wireframe: {fileID: 3282374959481338374}
+  _rayMovement: {fileID: 0}
 --- !u!1 &2482044695804992098
 GameObject:
   m_ObjectHideFlags: 0

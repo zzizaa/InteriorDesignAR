@@ -29,8 +29,8 @@ namespace Oculus.Interaction
         private MonoBehaviour _pointableElement;
 
         [SerializeField, Interface(typeof(ISurface))]
-        private MonoBehaviour _surface;
-        public ISurface Surface { get; private set; }
+        public MonoBehaviour _surface;
+        private ISurface Surface { get;  set; }
 
         [SerializeField, Optional, Interface(typeof(ISurface))]
         private MonoBehaviour _selectSurface = null;

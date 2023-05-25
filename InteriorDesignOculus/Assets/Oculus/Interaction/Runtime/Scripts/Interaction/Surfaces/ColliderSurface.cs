@@ -26,7 +26,7 @@ namespace Oculus.Interaction.Surfaces
     {
         [Tooltip("The Surface will be represented by this collider.")]
         [SerializeField]
-        private Collider _collider;
+        public Collider _collider;
         
         protected virtual void Start()
         {

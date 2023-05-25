@@ -31,7 +31,7 @@ namespace Oculus.Interaction
     public class InteractableUnityEventWrapper : MonoBehaviour
     {
         [SerializeField, Interface(typeof(IInteractableView))]
-        private MonoBehaviour _interactableView;
+        public MonoBehaviour _interactableView;
         private IInteractableView InteractableView;
 
         [SerializeField]
@@ -155,6 +155,11 @@ namespace Oculus.Interaction
             WhenSelectingInteractorViewRemoved.Invoke();
         }
 
+        public void AddSelectListener(UnityAction listener)
+        {
+            _whenSelect.AddListener(listener);
+        }
+        
         #region Inject
 
         public void InjectAllInteractableUnityEventWrapper(IInteractableView interactableView)

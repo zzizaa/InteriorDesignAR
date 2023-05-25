@@ -1,5 +1,9 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using Oculus.Interaction;
+using Oculus.Interaction.Surfaces;
+using UnityEditor;
 using UnityEngine;
 
 namespace Pixelplacement.XRTools
@@ -12,6 +16,8 @@ namespace Pixelplacement.XRTools
         //Private Variables:
         private Vector3 _ceilingCenter;
         private float _windingDirection;
+        [SerializeField] private GameObject _rayMovement;
+        private GameObject floor;
 
         //Startup:
         protected override void Awake()
@@ -24,7 +30,7 @@ namespace Pixelplacement.XRTools
         {
             //sets:
             wireframe.positionCount = 0;
-            
+
             //calls:
             SetCeilingCenter();
             SetWindingDirection();
@@ -40,13 +46,13 @@ namespace Pixelplacement.XRTools
             //continue:
             Next();
         }
-
+        
         //Private Methods:
         private void BuildHorizontalSurfaces()
         {
             //gameobject creation:
             GameObject ceiling = new GameObject("(Ceiling)");
-            GameObject floor = new GameObject("(Floor)");
+            floor = new GameObject("(Floor)");
             ceiling.transform.parent = RoomAnchor.Instance.transform;
             floor.transform.parent = RoomAnchor.Instance.transform;
             
@@ -140,6 +146,23 @@ namespace Pixelplacement.XRTools
             floor.AddComponent<BoxCollider>();
             
             //zzizaa: bisognerebbe aggingere anche i components per il raycast della mano
+            floor.AddComponent<MeshCollider>();
+            floor.AddComponent<ColliderSurface>()._collider = floor.GetComponent<MeshCollider>();
+            var prova = floor.GetComponent<ColliderSurface>();
+            floor.AddComponent<RayInteractable>().InjectSurface(prova);
+            floor.AddComponent<InteractableUnityEventWrapper>().InjectInteractableView(floor.GetComponent<RayInteractable>());
+            //floor.GetComponent<ColliderSurface>()._collider = floor.GetComponent<MeshCollider>();
+            //floor.GetComponent<RayInteractable>()._surface = floor.GetComponent(typeof(ISurface)) as ColliderSurface;
+            //floor.GetComponent<InteractableUnityEventWrapper>()._interactableView = floor.GetComponent(typeof(IInteractableView)) as RayInteractable;
+            Debug.Log($"_rayMovement is: {_rayMovement}");
+            //floor.GetComponent<InteractableUnityEventWrapper>().AddSelectListener(delegate
+            //{
+             //  _rayMovement.GetComponent<RayMovement>().EnableRayInteractableScript();
+            //}); 
+            SerializedObject SO = new SerializedObject(floor.GetComponent<InteractableUnityEventWrapper>());
+            SO.Update();
+            floor.GetComponent<InteractableUnityEventWrapper>().WhenSelect.AddListener(_rayMovement.GetComponent<RayMovement>().EnableRayInteractableScript);
+            //floor.GetComponent<InteractableUnityEventWrapper>()._whenSelect.AddListener(delegate { _rayMovement.GetComponent<RayMovement>().GetRayCastHitPoint(_rayMovement.GetComponent<RayInteractor>());});
 
             //push floor down:
             floor.transform.Translate(Vector3.down * RoomMapper.Instance.RoomHeight);

@@ -14130,7 +14130,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PokeInteractableVisual__ctor_mAFA9FEC862
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* RayInteractable_get_Surface_m59538EFEB60CD9E00BB348AC127E68D2C13E1DEA (RayInteractable_t919CD322CF95146C13694BED1AA08416B90BA02C* __this, const RuntimeMethod* method) 
 {
 	{
-		// public ISurface Surface { get; private set; }
+		// private ISurface Surface { get;  set; }
 		RuntimeObject* L_0 = __this->___U3CSurfaceU3Ek__BackingField_28;
 		return L_0;
 	}
@@ -14139,7 +14139,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* RayInteractable_get_Surface_m5
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayInteractable_set_Surface_mA44B1E5712834BC653996DC4731F7876D58AE832 (RayInteractable_t919CD322CF95146C13694BED1AA08416B90BA02C* __this, RuntimeObject* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		// public ISurface Surface { get; private set; }
+		// private ISurface Surface { get;  set; }
 		RuntimeObject* L_0 = ___0_value;
 		__this->___U3CSurfaceU3Ek__BackingField_28 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CSurfaceU3Ek__BackingField_28), (void*)L_0);
@@ -31482,7 +31482,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PokeInteractableVisual_Injec
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayInteractable_set_Surface_mA44B1E5712834BC653996DC4731F7876D58AE832_inline (RayInteractable_t919CD322CF95146C13694BED1AA08416B90BA02C* __this, RuntimeObject* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		// public ISurface Surface { get; private set; }
+		// private ISurface Surface { get;  set; }
 		RuntimeObject* L_0 = ___0_value;
 		__this->___U3CSurfaceU3Ek__BackingField_28 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CSurfaceU3Ek__BackingField_28), (void*)L_0);
@@ -31502,7 +31502,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RayInteractable_set_Movement
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* RayInteractable_get_Surface_m59538EFEB60CD9E00BB348AC127E68D2C13E1DEA_inline (RayInteractable_t919CD322CF95146C13694BED1AA08416B90BA02C* __this, const RuntimeMethod* method) 
 {
 	{
-		// public ISurface Surface { get; private set; }
+		// private ISurface Surface { get;  set; }
 		RuntimeObject* L_0 = __this->___U3CSurfaceU3Ek__BackingField_28;
 		return L_0;
 	}

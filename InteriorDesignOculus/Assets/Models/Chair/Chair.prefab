@@ -124,9 +124,13 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7673485834248243125, guid: cd6065e80bd917a429ac58bfbbcb9ab8, type: 3}
-      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 4382037568436053171}
+    - target: {fileID: 7673485834248243125, guid: cd6065e80bd917a429ac58bfbbcb9ab8, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 35711942902195972}
     - target: {fileID: 7673485834248243125, guid: cd6065e80bd917a429ac58bfbbcb9ab8, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
@@ -137,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7673485834248243125, guid: cd6065e80bd917a429ac58bfbbcb9ab8, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: ActivateCanvas
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7673485834248243125, guid: cd6065e80bd917a429ac58bfbbcb9ab8, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
@@ -152,8 +156,12 @@ PrefabInstance:
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7673485834248243125, guid: cd6065e80bd917a429ac58bfbbcb9ab8, type: 3}
-      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7673485834248243125, guid: cd6065e80bd917a429ac58bfbbcb9ab8, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7690509907230664263, guid: cd6065e80bd917a429ac58bfbbcb9ab8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -169,6 +177,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd6065e80bd917a429ac58bfbbcb9ab8, type: 3}
+--- !u!114 &35711942902195972 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7673485834248243125, guid: cd6065e80bd917a429ac58bfbbcb9ab8, type: 3}
+  m_PrefabInstance: {fileID: 7639069684208722097}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4382037568436053171 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6256470291333727234, guid: cd6065e80bd917a429ac58bfbbcb9ab8, type: 3}

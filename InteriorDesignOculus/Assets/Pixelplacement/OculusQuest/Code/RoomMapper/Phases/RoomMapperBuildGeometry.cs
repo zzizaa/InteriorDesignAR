@@ -18,12 +18,14 @@ namespace Pixelplacement.XRTools
         private float _windingDirection;
         [SerializeField] private GameObject _rayMovement;
         private GameObject floor;
+        private GameObject _floorInteractable;
 
         //Startup:
         protected override void Awake()
         {
             base.Awake();
             wireframe.transform.parent = RoomAnchor.Instance.transform;
+            _floorInteractable = GameObject.FindWithTag("FloorInteractable");
         }
 
         private void OnEnable()
@@ -148,21 +150,17 @@ namespace Pixelplacement.XRTools
             //zzizaa: bisognerebbe aggingere anche i components per il raycast della mano
             floor.AddComponent<MeshCollider>();
             floor.AddComponent<ColliderSurface>()._collider = floor.GetComponent<MeshCollider>();
-            var prova = floor.GetComponent<ColliderSurface>();
-            floor.AddComponent<RayInteractable>().InjectSurface(prova);
-            floor.AddComponent<InteractableUnityEventWrapper>().InjectInteractableView(floor.GetComponent<RayInteractable>());
-            //floor.GetComponent<ColliderSurface>()._collider = floor.GetComponent<MeshCollider>();
-            //floor.GetComponent<RayInteractable>()._surface = floor.GetComponent(typeof(ISurface)) as ColliderSurface;
-            //floor.GetComponent<InteractableUnityEventWrapper>()._interactableView = floor.GetComponent(typeof(IInteractableView)) as RayInteractable;
-            Debug.Log($"_rayMovement is: {_rayMovement}");
-            //floor.GetComponent<InteractableUnityEventWrapper>().AddSelectListener(delegate
-            //{
-             //  _rayMovement.GetComponent<RayMovement>().EnableRayInteractableScript();
-            //}); 
-            SerializedObject SO = new SerializedObject(floor.GetComponent<InteractableUnityEventWrapper>());
-            SO.Update();
-            floor.GetComponent<InteractableUnityEventWrapper>().WhenSelect.AddListener(_rayMovement.GetComponent<RayMovement>().EnableRayInteractableScript);
-            //floor.GetComponent<InteractableUnityEventWrapper>()._whenSelect.AddListener(delegate { _rayMovement.GetComponent<RayMovement>().GetRayCastHitPoint(_rayMovement.GetComponent<RayInteractor>());});
+            var colliderSurface = floor.GetComponent<ColliderSurface>();
+            floor.AddComponent<RayInteractable>().InjectSurface(colliderSurface);
+            var rayInteractable = floor.GetComponent<RayInteractable>();
+            _floorInteractable.GetComponent<FloorSetup>().SetupFloor(floor, rayInteractable);
+            //floor.AddComponent<InteractableUnityEventWrapper>().InjectInteractableView(floor.GetComponent<RayInteractable>());
+            //Debug.Log($"_rayMovement is: {_rayMovement}");
+            //SerializedObject interactableUnityEventWrapper = new SerializedObject(floor.GetComponent<InteractableUnityEventWrapper>());
+            //interactableUnityEventWrapper.Update();
+            //floor.GetComponent<InteractableUnityEventWrapper>().WhenSelect.AddListener(_rayMovement.GetComponent<RayMovement>().EnableRayInteractableScript);
+            //floor.GetComponent<InteractableUnityEventWrapper>().WhenSelect.AddListener((() => _rayMovement.GetComponent<RayMovement>()
+            //   .GetRayCastHitPoint(_rayMovement.GetComponent<RayInteractor>())));
 
             //push floor down:
             floor.transform.Translate(Vector3.down * RoomMapper.Instance.RoomHeight);

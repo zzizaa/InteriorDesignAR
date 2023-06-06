@@ -35,7 +35,7 @@ namespace Oculus.Interaction
 
         [SerializeField]
         private float _maxRayLength = 5f;
-
+        
         [SerializeField]
         [Tooltip("(Meters, World) The threshold below which distances to a surface " +
                  "are treated as equal for the purposes of ranking.")]

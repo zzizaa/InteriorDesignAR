@@ -9,12 +9,16 @@ public class SpawnModel : MonoBehaviour
     [SerializeField] private GameObject _chair;
     [SerializeField] private Transform spawningPoint;
     [SerializeField] private List<ModelScriptableObject> _models;
-    [SerializeField] private GameObject _model;
+    [SerializeField] private GameObject _spawnPoint;
+    [SerializeField] private int _spawningDistance;
     
 
     public void SelectModel(int i)
     {
-        Instantiate(_models[i].model, _model.transform.position, Quaternion.identity);
+        //Need to use camera forward to spawn in front instead of player pos.z
+        Vector3 spawnPosition = new Vector3(_spawnPoint.transform.position.x, _spawnPoint.transform.position.y,
+            _spawnPoint.transform.position.z + _spawningDistance);
+        Instantiate(_models[i].model, spawnPosition, Quaternion.identity);
     }
     public void SpawnChair()
     {

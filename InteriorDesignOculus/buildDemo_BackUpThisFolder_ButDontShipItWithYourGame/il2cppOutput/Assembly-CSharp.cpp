@@ -165,12 +165,20 @@ struct InvokerFuncInvoker1<R, T1*>
 	}
 };
 
+// System.Action`1<Oculus.Interaction.IInteractorView>
+struct Action_1_tD87AE2D351A24813699E18DFFF25AB725A668A34;
 // System.Action`1<System.Int32>
 struct Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404;
+// System.Action`1<Oculus.Interaction.InteractableStateChangeArgs>
+struct Action_1_t6FD8B79CDD506D49592A37BD0E0C9D68FC730BA5;
+// System.Action`1<Oculus.Interaction.InteractorStateChangeArgs>
+struct Action_1_tF10F105A4DDC047C8B0A5EACE0FDADCE23B3D513;
 // System.Action`1<OVRCameraRig>
 struct Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F;
 // System.Action`1<System.Object>
 struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
+// System.Action`1<Oculus.Interaction.PointerEvent>
+struct Action_1_t16439AC0253118742562394ACC7B97D80B44200D;
 // System.Action`1<TMPro.TMP_TextInfo>
 struct Action_1_tB93AB717F9D419A1BEC832FF76E74EAA32184CC1;
 // System.Action`1<TeleportDestination>
@@ -215,6 +223,12 @@ struct Dictionary_2_t489B023479196B8FC9709A9F834FC38729BD9493;
 struct Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA;
 // System.Collections.Generic.Dictionary`2<System.String,UnityEngine.UI.ToggleGroup>
 struct Dictionary_2_t4D32AB7B38D14EB24A56141DC52CF5643FDF9834;
+// Oculus.Interaction.Collections.EnumerableHashSet`1<Oculus.Interaction.RayInteractor>
+struct EnumerableHashSet_1_t09983D50B1667469E5E81D3B8ABB8ACCB5488A41;
+// System.Func`1<System.Boolean>
+struct Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457;
+// System.Func`1<Oculus.Interaction.RayInteractable>
+struct Func_1_tC8A2B187FAE6F0BFA707E2A4C7222C1765686C4D;
 // System.Func`3<System.Int32,System.String,TMPro.TMP_FontAsset>
 struct Func_3_tC721DF8CDD07ED66A4833A19A2ED2302608C906C;
 // System.Func`3<System.Int32,System.String,TMPro.TMP_SpriteAsset>
@@ -223,6 +237,8 @@ struct Func_3_t6F6D9932638EA1A5A45303C6626C818C25D164E5;
 struct IEnumerable_1_tED602875C5D5C7BECAD2C641945DF5416536FA7B;
 // System.Collections.Generic.IEqualityComparer`1<System.String>
 struct IEqualityComparer_1_tAE94C8F24AD5B94D4EE85CA9FC59E3409D41CAF7;
+// Oculus.Interaction.InteractableRegistry`2<Oculus.Interaction.RayInteractor,Oculus.Interaction.RayInteractable>
+struct InteractableRegistry_2_t4A7AA355365C4096FD0FE7181AB76390AC11698B;
 // System.Collections.Generic.Dictionary`2/KeyCollection<System.String,UnityEngine.UI.ToggleGroup>
 struct KeyCollection_t47056C22C552B47CC94F4DE3B0E416AFE2871E4A;
 // System.Collections.Generic.List`1<UnityEngine.CanvasGroup>
@@ -233,10 +249,14 @@ struct List_1_t3517D52AE25CA3B19051E691E9C06ED03A3AB9B8;
 struct List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B;
 // System.Collections.Generic.List`1<UnityEngine.UI.Graphic>
 struct List_1_tF6D13D87DD02D4EF3ECD7763371397BD6D1A2C0F;
+// System.Collections.Generic.List`1<Oculus.Interaction.IGameObjectFilter>
+struct List_1_tCC32A86B64F8E49343B08DDC627752C2AF21ACA4;
 // System.Collections.Generic.List`1<UnityEngine.UI.Image>
 struct List_1_tE6BB71ABF15905EFA2BE92C38A2716547AEADB19;
 // System.Collections.Generic.List`1<System.Int32>
 struct List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73;
+// System.Collections.Generic.List`1<UnityEngine.MonoBehaviour>
+struct List_1_tCB9190A56C65FD59CE07C6A0EA71F30067A43D81;
 // System.Collections.Generic.List`1<System.Object>
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
 // System.Collections.Generic.List`1<UnityEngine.EventSystems.RaycastResult>
@@ -259,6 +279,12 @@ struct List_1_t90832B88D7207769654164CC28440CF594CC397D;
 struct List_1_t86E75F5042EFDDED6CC644C92E125E248E01D577;
 // System.Collections.Generic.List`1<OVRRaycaster/RaycastHit>
 struct List_1_t9F19053F72A3E5B96604F70A14B49B27869D5C97;
+// Oculus.Interaction.MultiAction`1<Oculus.Interaction.RayInteractable>
+struct MultiAction_1_t2345669FB8090E9B95D403CD5436A9547610906F;
+// Oculus.Interaction.MultiAction`1<Oculus.Interaction.RayInteractor>
+struct MultiAction_1_t2186126C11EF711D3CFAE4D6D0C66D342C199F1E;
+// System.Collections.Generic.Queue`1<System.Boolean>
+struct Queue_1_t803CA034D040E531D06237F0C5EB6DFE225B3B77;
 // Oculus.Platform.Request`1<System.String>
 struct Request_1_t3EA499B388856971AB69C173E53D128BEBA5144C;
 // UnityEngine.UI.CoroutineTween.TweenRunner`1<UnityEngine.UI.CoroutineTween.ColorTween>
@@ -419,6 +445,8 @@ struct CharacterCapsule_t519C6280639FC53185E927D1D1F471D4040E276C;
 struct CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A;
 // UnityEngine.Collider
 struct Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76;
+// Oculus.Interaction.Surfaces.ColliderSurface
+struct ColliderSurface_tA7A85E4495E95DA152A8607976965F66B6AE6DFD;
 // UnityEngine.Component
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
 // UnityEngine.Coroutine
@@ -441,6 +469,8 @@ struct Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB;
 struct EventSystem_t61C51380B105BE9D2C39C4F15B7E655659957707;
 // System.Exception
 struct Exception_t;
+// FloorSetup
+struct FloorSetup_t4C79DCDD91C3FC9D648B7D9BF9E76AEB353FA722;
 // UnityEngine.UI.FontData
 struct FontData_tB8E562846C6CB59C43260F69AE346B9BF3157224;
 // UnityEngine.GameObject
@@ -451,18 +481,34 @@ struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931;
 struct HandedInputSelector_t03E81F27E4BABDA2242FEDC37F67FEACF7DD2E75;
 // HandsActiveChecker
 struct HandsActiveChecker_t6A81E0F5764685D2323A37325349986B1BC3283A;
+// Oculus.Interaction.IActiveState
+struct IActiveState_tE0F401037570483F58CD8CD4ED2A862D494517EB;
 // System.IAsyncResult
 struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
 // System.Collections.IDictionary
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
 // System.Collections.IEnumerator
 struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
+// Oculus.Interaction.IInteractableView
+struct IInteractableView_t043883F31EB8B9D77ABD7A85BB70EF83FF13741F;
+// Oculus.Interaction.IMovement
+struct IMovement_t636D9C1ED5B84F85EA2F469377AEAEC4E17294EA;
+// Oculus.Interaction.IMovementProvider
+struct IMovementProvider_tF89A1ECDB010071D4F96A7E88B2343363BD834E1;
+// Oculus.Interaction.IPointableElement
+struct IPointableElement_t5D9695CD8759D692B8F8430451929CCB2EBF63F1;
+// Oculus.Interaction.ISelector
+struct ISelector_t67FC626DAEE009248843EA2CE7425D5CDFBEE730;
+// Oculus.Interaction.Surfaces.ISurface
+struct ISurface_t2252B442B6309192CFC6B5CC5849C4C4859E638E;
 // TMPro.ITextPreprocessor
 struct ITextPreprocessor_tDBB49C8B68D7B80E8D233B9D9666C43981EFAAB9;
 // UnityEngine.UI.Image
 struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E;
 // UnityEngine.UI.InputField
 struct InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140;
+// Oculus.Interaction.InteractableUnityEventWrapper
+struct InteractableUnityEventWrapper_t799E6CF74F401DEEF895AAE3B240219D69349740;
 // UnityEngine.Events.InvokableCallList
 struct InvokableCallList_t309E1C8C7CE885A0D2F98C84CEA77A8935688382;
 // LaserPointer
@@ -539,6 +585,12 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
 struct PersistentCallGroup_tB826EDF15DC80F71BCBCD8E410FD959A04C33F25;
 // UnityEngine.EventSystems.PointerEventData
 struct PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB;
+// Oculus.Interaction.RayInteractable
+struct RayInteractable_t919CD322CF95146C13694BED1AA08416B90BA02C;
+// Oculus.Interaction.RayInteractor
+struct RayInteractor_tD2791AEFB83F0FF9724716F9EAA2592460ECD8C9;
+// RayMovement
+struct RayMovement_t00333377EE9BE92ECCB994F344E78B3AF7CD4BA9;
 // UnityEngine.UI.RectMask2D
 struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
 // UnityEngine.RectTransform
@@ -645,6 +697,8 @@ struct TouchScreenKeyboard_tE87B78A3DAED69816B44C99270A734682E093E7A;
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
 // System.Type
 struct Type_t;
+// Oculus.Interaction.UniqueIdentifier
+struct UniqueIdentifier_t2CFA79939EF9F08A544BAA867445202C60871342;
 // UnityEngine.Events.UnityAction
 struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7;
 // UnityEngine.Events.UnityEvent
@@ -729,6 +783,8 @@ struct PassthroughCapabilities_t3B338539A7E4125FE79381628715BDC608471F9F;
 struct ExternalSurfaceObjectCreated_tBAE280613D86A040CC365995D817E30254FDEF1A;
 // UnityEngine.EventSystems.PointerInputModule/MouseState
 struct MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09;
+// Oculus.Interaction.RayInteractor/RayCandidateProperties
+struct RayCandidateProperties_t28891B2479CFE5368DB2854EAB88DFDA42112B56;
 // UnityEngine.RectTransform/ReapplyDrivenProperties
 struct ReapplyDrivenProperties_t3482EA130A01FF7EE2EEFE37F66A5215D08CFE24;
 // UnityEngine.UI.Slider/SliderEvent
@@ -939,6 +995,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisLocomotionTelepor
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisMeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE_m0EDA0079FA3617687C4A28623B79A37D618D9CFB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisOVROverlay_t236C8597A48845938E1DE1D591224817058AC43D_m13B68445C379FC7A3B1CDF097B3369C0F0C78A92_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisOVRRaycaster_t7F1DE085FFCC5957E5F9D6DDA71FA9670EFDE182_mDC668F954A830DF442E921DBDFB635E75E1C7B26_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRayInteractor_tD2791AEFB83F0FF9724716F9EAA2592460ECD8C9_mC6804B34C2174238B6092929FBC4E29DC551FE57_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRayMovement_t00333377EE9BE92ECCB994F344E78B3AF7CD4BA9_m7A2C64BFA300246560BC75E415FCD29409590DF2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_mC91ACC92AD57CA6CA00991DAF1DB3830BCE07AF8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var;
@@ -957,6 +1015,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_ContainsKey_m11A7791DBB6E71CC2
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mBF107BD4D0BC301B5C8329D9EB6951997345CD48_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Item_m2176CA5D4B253702EA049218216D085F61DBCEAF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_set_Item_m71A92FF98ED7217671B3C93A3DC2C76FB9D27E51_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* FloorSetup_U3CSetupFloorU3Eb__2_0_mBFF7E538DBEC2EB12AD2D9D8C6EA7FB67429A0AF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisOVROverlay_t236C8597A48845938E1DE1D591224817058AC43D_m0C68826E4AEEDB7AF4C2684A66A1886B9FD4D26A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisToggleGroup_tF2E6FE7D4B17BDBF82462715CFB57C4FDE0A2A2C_m4B74F74B0C7DF2BD2A5061E4BA49A25AB8F95AE7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisVideoPlayer_t48EA4A8117B822BC59590150DED9AD46C62F65D3_m5E711BC1432102F3C65C301B965F9B5FDF4A8F1D_RuntimeMethod_var;
@@ -1003,6 +1062,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_t76FEDD663
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisLineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D_m46E69695493073E4C7BDD871863E382C247E66DD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m2EBBFED3BA1B67B30F8503C5BD918B4C1745903E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisTeleportDestination_t0E4A197756CFA0C14366ED74F65F78A418AEC767_m444737A4D3037145C3D73229B6DDBB9E6EC297DC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* RayMovement_EnableRayInteractableScript_mBDC68A9C2334F8C86508E7652D5D0319312DFBF2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TeleportAimVisualLaser_EnterAimState_m33BC12731F202C17C584C8ECCEA38A283622976F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TeleportAimVisualLaser_ExitAimState_m28D948F22ED90279E811E07205DED9DE5CF9A180_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TeleportAimVisualLaser_UpdateAimData_m6D7C7F06BD39301625E1AEFF4C02AA7E37A82239_RuntimeMethod_var;
@@ -2705,6 +2765,15 @@ struct Plane_tB7D8CC6F7AACF5F3AA483AF005C1102A8577BC0C
 	float ___m_Distance_2;
 };
 
+// UnityEngine.Pose
+struct Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 
+{
+	// UnityEngine.Vector3 UnityEngine.Pose::position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position_0;
+	// UnityEngine.Quaternion UnityEngine.Pose::rotation
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___rotation_1;
+};
+
 // Unity.Profiling.ProfilerMarker
 struct ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD 
 {
@@ -2815,6 +2884,17 @@ struct RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B
 {
 	// System.IntPtr System.RuntimeTypeHandle::value
 	intptr_t ___value_0;
+};
+
+// Oculus.Interaction.Surfaces.SurfaceHit
+struct SurfaceHit_t4BBD2B154CD1B250AC33FD12866CEFE8331AA961 
+{
+	// UnityEngine.Vector3 Oculus.Interaction.Surfaces.SurfaceHit::<Point>k__BackingField
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CPointU3Ek__BackingField_0;
+	// UnityEngine.Vector3 Oculus.Interaction.Surfaces.SurfaceHit::<Normal>k__BackingField
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CNormalU3Ek__BackingField_1;
+	// System.Single Oculus.Interaction.Surfaces.SurfaceHit::<Distance>k__BackingField
+	float ___U3CDistanceU3Ek__BackingField_2;
 };
 
 // TMPro.VertexGradient
@@ -3301,6 +3381,15 @@ struct U3CDoWarpU3Ed__3_tEC90AA3661924DDF26771B3588C31515D01CA781  : public Runt
 // UnityEngine.UI.Toggle/ToggleEvent
 struct ToggleEvent_t88B31268F9D6D1882E4F921B14704FB9F7047F02  : public UnityEvent_1_tEEB36A367DCB5867E93AAF6BECAF3558CA71BECB
 {
+};
+
+// System.Nullable`1<Oculus.Interaction.Surfaces.SurfaceHit>
+struct Nullable_1_t1D8F1F8DD03058F7F39151F71A70742DF12FA785 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	SurfaceHit_t4BBD2B154CD1B250AC33FD12866CEFE8331AA961 ___value_1;
 };
 
 // TMPro.TMP_TextProcessingStack`1<TMPro.HighlightState>
@@ -3977,6 +4066,112 @@ struct VideoPlayer_t48EA4A8117B822BC59590150DED9AD46C62F65D3  : public Behaviour
 	FrameReadyEventHandler_tDEDADF060B051C2953122274EBF3896AF48735E8* ___frameReady_11;
 };
 
+// Oculus.Interaction.Interactable`2<Oculus.Interaction.RayInteractor,Oculus.Interaction.RayInteractable>
+struct Interactable_2_tB6EBEA87409A65B6A03A6C4D561FA616C9CFB901  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.Collections.Generic.List`1<UnityEngine.MonoBehaviour> Oculus.Interaction.Interactable`2::_interactorFilters
+	List_1_tCB9190A56C65FD59CE07C6A0EA71F30067A43D81* ____interactorFilters_4;
+	// System.Collections.Generic.List`1<Oculus.Interaction.IGameObjectFilter> Oculus.Interaction.Interactable`2::InteractorFilters
+	List_1_tCC32A86B64F8E49343B08DDC627752C2AF21ACA4* ___InteractorFilters_5;
+	// System.Int32 Oculus.Interaction.Interactable`2::_maxInteractors
+	int32_t ____maxInteractors_6;
+	// System.Int32 Oculus.Interaction.Interactable`2::_maxSelectingInteractors
+	int32_t ____maxSelectingInteractors_7;
+	// UnityEngine.Object Oculus.Interaction.Interactable`2::_data
+	Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ____data_8;
+	// System.Object Oculus.Interaction.Interactable`2::<Data>k__BackingField
+	RuntimeObject* ___U3CDataU3Ek__BackingField_9;
+	// Oculus.Interaction.Collections.EnumerableHashSet`1<TInteractor> Oculus.Interaction.Interactable`2::_interactors
+	EnumerableHashSet_1_t09983D50B1667469E5E81D3B8ABB8ACCB5488A41* ____interactors_10;
+	// Oculus.Interaction.Collections.EnumerableHashSet`1<TInteractor> Oculus.Interaction.Interactable`2::_selectingInteractors
+	EnumerableHashSet_1_t09983D50B1667469E5E81D3B8ABB8ACCB5488A41* ____selectingInteractors_11;
+	// Oculus.Interaction.InteractableState Oculus.Interaction.Interactable`2::_state
+	int32_t ____state_12;
+	// System.Action`1<Oculus.Interaction.InteractableStateChangeArgs> Oculus.Interaction.Interactable`2::WhenStateChanged
+	Action_1_t6FD8B79CDD506D49592A37BD0E0C9D68FC730BA5* ___WhenStateChanged_13;
+	// System.Action`1<Oculus.Interaction.IInteractorView> Oculus.Interaction.Interactable`2::WhenInteractorViewAdded
+	Action_1_tD87AE2D351A24813699E18DFFF25AB725A668A34* ___WhenInteractorViewAdded_14;
+	// System.Action`1<Oculus.Interaction.IInteractorView> Oculus.Interaction.Interactable`2::WhenInteractorViewRemoved
+	Action_1_tD87AE2D351A24813699E18DFFF25AB725A668A34* ___WhenInteractorViewRemoved_15;
+	// System.Action`1<Oculus.Interaction.IInteractorView> Oculus.Interaction.Interactable`2::WhenSelectingInteractorViewAdded
+	Action_1_tD87AE2D351A24813699E18DFFF25AB725A668A34* ___WhenSelectingInteractorViewAdded_16;
+	// System.Action`1<Oculus.Interaction.IInteractorView> Oculus.Interaction.Interactable`2::WhenSelectingInteractorViewRemoved
+	Action_1_tD87AE2D351A24813699E18DFFF25AB725A668A34* ___WhenSelectingInteractorViewRemoved_17;
+	// Oculus.Interaction.MultiAction`1<TInteractor> Oculus.Interaction.Interactable`2::_whenInteractorAdded
+	MultiAction_1_t2186126C11EF711D3CFAE4D6D0C66D342C199F1E* ____whenInteractorAdded_18;
+	// Oculus.Interaction.MultiAction`1<TInteractor> Oculus.Interaction.Interactable`2::_whenInteractorRemoved
+	MultiAction_1_t2186126C11EF711D3CFAE4D6D0C66D342C199F1E* ____whenInteractorRemoved_19;
+	// Oculus.Interaction.MultiAction`1<TInteractor> Oculus.Interaction.Interactable`2::_whenSelectingInteractorAdded
+	MultiAction_1_t2186126C11EF711D3CFAE4D6D0C66D342C199F1E* ____whenSelectingInteractorAdded_20;
+	// Oculus.Interaction.MultiAction`1<TInteractor> Oculus.Interaction.Interactable`2::_whenSelectingInteractorRemoved
+	MultiAction_1_t2186126C11EF711D3CFAE4D6D0C66D342C199F1E* ____whenSelectingInteractorRemoved_21;
+};
+
+// Oculus.Interaction.Interactor`2<Oculus.Interaction.RayInteractor,Oculus.Interaction.RayInteractable>
+struct Interactor_2_t62F2EF9221D6D854987AA82D25A809992DAAB1CB  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.MonoBehaviour Oculus.Interaction.Interactor`2::_activeState
+	MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* ____activeState_4;
+	// Oculus.Interaction.IActiveState Oculus.Interaction.Interactor`2::ActiveState
+	RuntimeObject* ___ActiveState_5;
+	// System.Collections.Generic.List`1<UnityEngine.MonoBehaviour> Oculus.Interaction.Interactor`2::_interactableFilters
+	List_1_tCB9190A56C65FD59CE07C6A0EA71F30067A43D81* ____interactableFilters_6;
+	// System.Collections.Generic.List`1<Oculus.Interaction.IGameObjectFilter> Oculus.Interaction.Interactor`2::InteractableFilters
+	List_1_tCC32A86B64F8E49343B08DDC627752C2AF21ACA4* ___InteractableFilters_7;
+	// System.Func`1<TInteractable> Oculus.Interaction.Interactor`2::_computeCandidateOverride
+	Func_1_tC8A2B187FAE6F0BFA707E2A4C7222C1765686C4D* ____computeCandidateOverride_8;
+	// System.Boolean Oculus.Interaction.Interactor`2::_clearComputeCandidateOverrideOnSelect
+	bool ____clearComputeCandidateOverrideOnSelect_9;
+	// System.Func`1<System.Boolean> Oculus.Interaction.Interactor`2::_computeShouldSelectOverride
+	Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* ____computeShouldSelectOverride_10;
+	// System.Boolean Oculus.Interaction.Interactor`2::_clearComputeShouldSelectOverrideOnSelect
+	bool ____clearComputeShouldSelectOverrideOnSelect_11;
+	// System.Func`1<System.Boolean> Oculus.Interaction.Interactor`2::_computeShouldUnselectOverride
+	Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* ____computeShouldUnselectOverride_12;
+	// System.Boolean Oculus.Interaction.Interactor`2::_clearComputeShouldUnselectOverrideOnUnselect
+	bool ____clearComputeShouldUnselectOverrideOnUnselect_13;
+	// Oculus.Interaction.InteractorState Oculus.Interaction.Interactor`2::_state
+	int32_t ____state_14;
+	// System.Action`1<Oculus.Interaction.InteractorStateChangeArgs> Oculus.Interaction.Interactor`2::WhenStateChanged
+	Action_1_tF10F105A4DDC047C8B0A5EACE0FDADCE23B3D513* ___WhenStateChanged_15;
+	// System.Action Oculus.Interaction.Interactor`2::WhenPreprocessed
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___WhenPreprocessed_16;
+	// System.Action Oculus.Interaction.Interactor`2::WhenProcessed
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___WhenProcessed_17;
+	// System.Action Oculus.Interaction.Interactor`2::WhenPostprocessed
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___WhenPostprocessed_18;
+	// Oculus.Interaction.ISelector Oculus.Interaction.Interactor`2::_selector
+	RuntimeObject* ____selector_19;
+	// System.Int32 Oculus.Interaction.Interactor`2::_maxIterationsPerFrame
+	int32_t ____maxIterationsPerFrame_20;
+	// System.Collections.Generic.Queue`1<System.Boolean> Oculus.Interaction.Interactor`2::_selectorQueue
+	Queue_1_t803CA034D040E531D06237F0C5EB6DFE225B3B77* ____selectorQueue_21;
+	// TInteractable Oculus.Interaction.Interactor`2::_candidate
+	RayInteractable_t919CD322CF95146C13694BED1AA08416B90BA02C* ____candidate_22;
+	// TInteractable Oculus.Interaction.Interactor`2::_interactable
+	RayInteractable_t919CD322CF95146C13694BED1AA08416B90BA02C* ____interactable_23;
+	// TInteractable Oculus.Interaction.Interactor`2::_selectedInteractable
+	RayInteractable_t919CD322CF95146C13694BED1AA08416B90BA02C* ____selectedInteractable_24;
+	// Oculus.Interaction.MultiAction`1<TInteractable> Oculus.Interaction.Interactor`2::_whenInteractableSet
+	MultiAction_1_t2345669FB8090E9B95D403CD5436A9547610906F* ____whenInteractableSet_25;
+	// Oculus.Interaction.MultiAction`1<TInteractable> Oculus.Interaction.Interactor`2::_whenInteractableUnset
+	MultiAction_1_t2345669FB8090E9B95D403CD5436A9547610906F* ____whenInteractableUnset_26;
+	// Oculus.Interaction.MultiAction`1<TInteractable> Oculus.Interaction.Interactor`2::_whenInteractableSelected
+	MultiAction_1_t2345669FB8090E9B95D403CD5436A9547610906F* ____whenInteractableSelected_27;
+	// Oculus.Interaction.MultiAction`1<TInteractable> Oculus.Interaction.Interactor`2::_whenInteractableUnselected
+	MultiAction_1_t2345669FB8090E9B95D403CD5436A9547610906F* ____whenInteractableUnselected_28;
+	// Oculus.Interaction.UniqueIdentifier Oculus.Interaction.Interactor`2::_identifier
+	UniqueIdentifier_t2CFA79939EF9F08A544BAA867445202C60871342* ____identifier_29;
+	// UnityEngine.Object Oculus.Interaction.Interactor`2::_data
+	Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ____data_30;
+	// System.Object Oculus.Interaction.Interactor`2::<Data>k__BackingField
+	RuntimeObject* ___U3CDataU3Ek__BackingField_31;
+	// System.Boolean Oculus.Interaction.Interactor`2::_started
+	bool ____started_32;
+	// System.Boolean Oculus.Interaction.Interactor`2::<IsRootDriver>k__BackingField
+	bool ___U3CIsRootDriverU3Ek__BackingField_33;
+};
+
 // AnalyticsUI
 struct AnalyticsUI_tCC56E048BE4CD89C7E776908BA93BF0E08C30B46  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -4123,6 +4318,15 @@ struct DebugUISample_t90AC63CF475C8154E6A44AAA917728D06D9B0485  : public MonoBeh
 	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___sliderText_5;
 };
 
+// FloorSetup
+struct FloorSetup_t4C79DCDD91C3FC9D648B7D9BF9E76AEB353FA722  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// Oculus.Interaction.InteractableUnityEventWrapper FloorSetup::_eventWrapper
+	InteractableUnityEventWrapper_t799E6CF74F401DEEF895AAE3B240219D69349740* ____eventWrapper_4;
+	// RayMovement FloorSetup::_rayMovement
+	RayMovement_t00333377EE9BE92ECCB994F344E78B3AF7CD4BA9* ____rayMovement_5;
+};
+
 // HandedInputSelector
 struct HandedInputSelector_t03E81F27E4BABDA2242FEDC37F67FEACF7DD2E75  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -4143,6 +4347,33 @@ struct HandsActiveChecker_t6A81E0F5764685D2323A37325349986B1BC3283A  : public Mo
 	OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9* ____cameraRig_6;
 	// UnityEngine.Transform HandsActiveChecker::_centerEye
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ____centerEye_7;
+};
+
+// Oculus.Interaction.InteractableUnityEventWrapper
+struct InteractableUnityEventWrapper_t799E6CF74F401DEEF895AAE3B240219D69349740  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.MonoBehaviour Oculus.Interaction.InteractableUnityEventWrapper::_interactableView
+	MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* ____interactableView_4;
+	// Oculus.Interaction.IInteractableView Oculus.Interaction.InteractableUnityEventWrapper::InteractableView
+	RuntimeObject* ___InteractableView_5;
+	// UnityEngine.Events.UnityEvent Oculus.Interaction.InteractableUnityEventWrapper::_whenHover
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ____whenHover_6;
+	// UnityEngine.Events.UnityEvent Oculus.Interaction.InteractableUnityEventWrapper::_whenUnhover
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ____whenUnhover_7;
+	// UnityEngine.Events.UnityEvent Oculus.Interaction.InteractableUnityEventWrapper::_whenSelect
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ____whenSelect_8;
+	// UnityEngine.Events.UnityEvent Oculus.Interaction.InteractableUnityEventWrapper::_whenUnselect
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ____whenUnselect_9;
+	// UnityEngine.Events.UnityEvent Oculus.Interaction.InteractableUnityEventWrapper::_whenInteractorViewAdded
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ____whenInteractorViewAdded_10;
+	// UnityEngine.Events.UnityEvent Oculus.Interaction.InteractableUnityEventWrapper::_whenInteractorViewRemoved
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ____whenInteractorViewRemoved_11;
+	// UnityEngine.Events.UnityEvent Oculus.Interaction.InteractableUnityEventWrapper::_whenSelectingInteractorViewAdded
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ____whenSelectingInteractorViewAdded_12;
+	// UnityEngine.Events.UnityEvent Oculus.Interaction.InteractableUnityEventWrapper::_whenSelectingInteractorViewRemoved
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ____whenSelectingInteractorViewRemoved_13;
+	// System.Boolean Oculus.Interaction.InteractableUnityEventWrapper::_started
+	bool ____started_14;
 };
 
 // LocomotionController
@@ -4637,6 +4868,23 @@ struct OVRScreenFade_tCFBC0A69E92FF77827F6CF5095FBE7F4A338B774  : public MonoBeh
 	bool ___isFading_15;
 };
 
+// RayMovement
+struct RayMovement_t00333377EE9BE92ECCB994F344E78B3AF7CD4BA9  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject RayMovement::_modelToMove
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____modelToMove_4;
+	// UnityEngine.GameObject RayMovement::_floor
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____floor_5;
+	// Oculus.Interaction.Surfaces.ColliderSurface RayMovement::_floorSurface
+	ColliderSurface_tA7A85E4495E95DA152A8607976965F66B6AE6DFD* ____floorSurface_6;
+	// Oculus.Interaction.RayInteractor RayMovement::_rayInteractor
+	RayInteractor_tD2791AEFB83F0FF9724716F9EAA2592460ECD8C9* ____rayInteractor_7;
+	// Oculus.Interaction.RayInteractable RayMovement::_rayInteractableComponent
+	RayInteractable_t919CD322CF95146C13694BED1AA08416B90BA02C* ____rayInteractableComponent_8;
+	// System.Boolean RayMovement::_isSelected
+	bool ____isSelected_9;
+};
+
 // SampleUI
 struct SampleUI_tBB9B84AF580D5357F4523D7E501B1DDFAA18BA5F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -4731,6 +4979,22 @@ struct TeleportSupport_tD75FC952FE010E15339A0C76364456B79046E6FC  : public MonoB
 
 // UnityEngine.EventSystems.UIBehaviour
 struct UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
+// Oculus.Interaction.PointerInteractable`2<Oculus.Interaction.RayInteractor,Oculus.Interaction.RayInteractable>
+struct PointerInteractable_2_t8FB520D2B0C729200F9F4684BDD085795B46D69A  : public Interactable_2_tB6EBEA87409A65B6A03A6C4D561FA616C9CFB901
+{
+	// Oculus.Interaction.IPointableElement Oculus.Interaction.PointerInteractable`2::<PointableElement>k__BackingField
+	RuntimeObject* ___U3CPointableElementU3Ek__BackingField_23;
+	// System.Action`1<Oculus.Interaction.PointerEvent> Oculus.Interaction.PointerInteractable`2::WhenPointerEventRaised
+	Action_1_t16439AC0253118742562394ACC7B97D80B44200D* ___WhenPointerEventRaised_24;
+	// System.Boolean Oculus.Interaction.PointerInteractable`2::_started
+	bool ____started_25;
+};
+
+// Oculus.Interaction.PointerInteractor`2<Oculus.Interaction.RayInteractor,Oculus.Interaction.RayInteractable>
+struct PointerInteractor_2_tE0EB8DA83DAEADC4CEDBD586B21E7E982D85A82F  : public Interactor_2_t62F2EF9221D6D854987AA82D25A809992DAAB1CB
 {
 };
 
@@ -5120,6 +5384,60 @@ struct PointerInputModule_tD71E11FA989C22D83883E120EAA4F05929907556  : public Ba
 	Dictionary_2_t489B023479196B8FC9709A9F834FC38729BD9493* ___m_PointerData_15;
 	// UnityEngine.EventSystems.PointerInputModule/MouseState UnityEngine.EventSystems.PointerInputModule::m_MouseState
 	MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09* ___m_MouseState_16;
+};
+
+// Oculus.Interaction.RayInteractable
+struct RayInteractable_t919CD322CF95146C13694BED1AA08416B90BA02C  : public PointerInteractable_2_t8FB520D2B0C729200F9F4684BDD085795B46D69A
+{
+	// UnityEngine.MonoBehaviour Oculus.Interaction.RayInteractable::_pointableElement
+	MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* ____pointableElement_26;
+	// UnityEngine.MonoBehaviour Oculus.Interaction.RayInteractable::_surface
+	MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* ____surface_27;
+	// Oculus.Interaction.Surfaces.ISurface Oculus.Interaction.RayInteractable::<Surface>k__BackingField
+	RuntimeObject* ___U3CSurfaceU3Ek__BackingField_28;
+	// UnityEngine.MonoBehaviour Oculus.Interaction.RayInteractable::_selectSurface
+	MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* ____selectSurface_29;
+	// Oculus.Interaction.Surfaces.ISurface Oculus.Interaction.RayInteractable::SelectSurface
+	RuntimeObject* ___SelectSurface_30;
+	// UnityEngine.MonoBehaviour Oculus.Interaction.RayInteractable::_movementProvider
+	MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* ____movementProvider_31;
+	// Oculus.Interaction.IMovementProvider Oculus.Interaction.RayInteractable::<MovementProvider>k__BackingField
+	RuntimeObject* ___U3CMovementProviderU3Ek__BackingField_32;
+	// System.Int32 Oculus.Interaction.RayInteractable::_tiebreakerScore
+	int32_t ____tiebreakerScore_33;
+};
+
+// Oculus.Interaction.RayInteractor
+struct RayInteractor_tD2791AEFB83F0FF9724716F9EAA2592460ECD8C9  : public PointerInteractor_2_tE0EB8DA83DAEADC4CEDBD586B21E7E982D85A82F
+{
+	// UnityEngine.MonoBehaviour Oculus.Interaction.RayInteractor::_selector
+	MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* ____selector_34;
+	// UnityEngine.Transform Oculus.Interaction.RayInteractor::_rayOrigin
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ____rayOrigin_35;
+	// System.Single Oculus.Interaction.RayInteractor::_maxRayLength
+	float ____maxRayLength_36;
+	// System.Single Oculus.Interaction.RayInteractor::_equalDistanceThreshold
+	float ____equalDistanceThreshold_37;
+	// Oculus.Interaction.RayInteractor/RayCandidateProperties Oculus.Interaction.RayInteractor::_rayCandidateProperties
+	RayCandidateProperties_t28891B2479CFE5368DB2854EAB88DFDA42112B56* ____rayCandidateProperties_38;
+	// Oculus.Interaction.IMovement Oculus.Interaction.RayInteractor::_movement
+	RuntimeObject* ____movement_39;
+	// Oculus.Interaction.Surfaces.SurfaceHit Oculus.Interaction.RayInteractor::_movedHit
+	SurfaceHit_t4BBD2B154CD1B250AC33FD12866CEFE8331AA961 ____movedHit_40;
+	// UnityEngine.Pose Oculus.Interaction.RayInteractor::_movementHitDelta
+	Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ____movementHitDelta_41;
+	// UnityEngine.Vector3 Oculus.Interaction.RayInteractor::<Origin>k__BackingField
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3COriginU3Ek__BackingField_42;
+	// UnityEngine.Quaternion Oculus.Interaction.RayInteractor::<Rotation>k__BackingField
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___U3CRotationU3Ek__BackingField_43;
+	// UnityEngine.Vector3 Oculus.Interaction.RayInteractor::<Forward>k__BackingField
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CForwardU3Ek__BackingField_44;
+	// UnityEngine.Vector3 Oculus.Interaction.RayInteractor::<End>k__BackingField
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CEndU3Ek__BackingField_45;
+	// System.Nullable`1<Oculus.Interaction.Surfaces.SurfaceHit> Oculus.Interaction.RayInteractor::<CollisionInfo>k__BackingField
+	Nullable_1_t1D8F1F8DD03058F7F39151F71A70742DF12FA785 ___U3CCollisionInfoU3Ek__BackingField_46;
+	// UnityEngine.Ray Oculus.Interaction.RayInteractor::<Ray>k__BackingField
+	Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 ___U3CRayU3Ek__BackingField_47;
 };
 
 // UnityEngine.UI.Slider
@@ -6856,6 +7174,10 @@ struct DebugUIBuilder_tC18B19AE08445BA1378C7DABB0E4858217E02E71_StaticFields
 
 // DebugUISample
 
+// FloorSetup
+
+// FloorSetup
+
 // HandedInputSelector
 
 // HandedInputSelector
@@ -6863,6 +7185,10 @@ struct DebugUIBuilder_tC18B19AE08445BA1378C7DABB0E4858217E02E71_StaticFields
 // HandsActiveChecker
 
 // HandsActiveChecker
+
+// Oculus.Interaction.InteractableUnityEventWrapper
+
+// Oculus.Interaction.InteractableUnityEventWrapper
 
 // LocomotionController
 
@@ -7059,6 +7385,10 @@ struct OVRScreenFade_tCFBC0A69E92FF77827F6CF5095FBE7F4A338B774_StaticFields
 
 // OVRScreenFade
 
+// RayMovement
+
+// RayMovement
+
 // SampleUI
 
 // SampleUI
@@ -7155,6 +7485,14 @@ struct InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140_StaticFields
 };
 
 // UnityEngine.UI.InputField
+
+// Oculus.Interaction.RayInteractable
+
+// Oculus.Interaction.RayInteractable
+
+// Oculus.Interaction.RayInteractor
+
+// Oculus.Interaction.RayInteractor
 
 // UnityEngine.UI.Slider
 
@@ -7946,6 +8284,8 @@ struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C  : public RuntimeAr
 };
 
 
+// T UnityEngine.Component::GetComponent<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // T UnityEngine.Object::FindObjectOfType<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_FindObjectOfType_TisRuntimeObject_m02DFBF011F3B59F777A5E521DB2A116DD496E968_gshared (const RuntimeMethod* method) ;
 // T System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
@@ -7960,8 +8300,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeO
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Contains_m4C9139C2A6B23E9343D3F87807B32C6E2CFE660D_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
-// T UnityEngine.Component::GetComponent<System.Object>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponentInChildren<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponentInChildren_TisRuntimeObject_mE483A27E876DE8E4E6901D6814837F81D7C42F65_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityAction`1<System.Single>::.ctor(System.Object,System.IntPtr)
@@ -8037,12 +8375,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3U5BU5D_tFF1859CCE176131B909E2044F76443
 // T[] System.Collections.Generic.List`1<System.Int32>::ToArray()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* List_1_ToArray_m65479FB75A5FE539EA1A0D6681172717D23CEAAA_gshared (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, const RuntimeMethod* method) ;
 
-// System.Void UnityEngine.GameObject::SetActive(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
-// System.Void UnityEngine.MonoBehaviour::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // UnityEngine.Transform UnityEngine.Component::get_transform()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+// UnityEngine.Transform UnityEngine.GameObject::get_transform()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+// UnityEngine.Transform UnityEngine.Transform::get_parent()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Transform::SetParent(UnityEngine.Transform)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_p, const RuntimeMethod* method) ;
+// System.Void Oculus.Interaction.InteractableUnityEventWrapper::InjectInteractableView(Oculus.Interaction.IInteractableView)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractableUnityEventWrapper_InjectInteractableView_m3D2245878AE5232095CF4458E71E58A8B82BA454 (InteractableUnityEventWrapper_t799E6CF74F401DEEF895AAE3B240219D69349740* __this, RuntimeObject* ___0_interactableView, const RuntimeMethod* method) ;
+// UnityEngine.Events.UnityEvent Oculus.Interaction.InteractableUnityEventWrapper::get_WhenSelect()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* InteractableUnityEventWrapper_get_WhenSelect_m67ECF4E52B66F1423581451764E1EBA24AFCF1E4_inline (InteractableUnityEventWrapper_t799E6CF74F401DEEF895AAE3B240219D69349740* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Events.UnityAction::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131 (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Events.UnityEvent::AddListener(UnityEngine.Events.UnityAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302 (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* __this, UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___0_call, const RuntimeMethod* method) ;
+// System.Void UnityEngine.MonoBehaviour::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+// T UnityEngine.Component::GetComponent<RayMovement>()
+inline RayMovement_t00333377EE9BE92ECCB994F344E78B3AF7CD4BA9* Component_GetComponent_TisRayMovement_t00333377EE9BE92ECCB994F344E78B3AF7CD4BA9_m7A2C64BFA300246560BC75E415FCD29409590DF2 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  RayMovement_t00333377EE9BE92ECCB994F344E78B3AF7CD4BA9* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// T UnityEngine.Component::GetComponent<Oculus.Interaction.RayInteractor>()
+inline RayInteractor_tD2791AEFB83F0FF9724716F9EAA2592460ECD8C9* Component_GetComponent_TisRayInteractor_tD2791AEFB83F0FF9724716F9EAA2592460ECD8C9_mC6804B34C2174238B6092929FBC4E29DC551FE57 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  RayInteractor_tD2791AEFB83F0FF9724716F9EAA2592460ECD8C9* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// System.Void RayMovement::GetRayCastHitPoint(Oculus.Interaction.RayInteractor)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayMovement_GetRayCastHitPoint_mE2CD1CFE50459E74AEC9C8A8A9715F757F311D62 (RayMovement_t00333377EE9BE92ECCB994F344E78B3AF7CD4BA9* __this, RayInteractor_tD2791AEFB83F0FF9724716F9EAA2592460ECD8C9* ___0_rayInteractor, const RuntimeMethod* method) ;
+// System.Void UnityEngine.GameObject::SetActive(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Transform::get_position()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 // UnityEngine.GameObject UnityEngine.Component::get_gameObject()
@@ -8176,10 +8540,6 @@ inline Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* Component_GetComponentI
 }
 // UnityEngine.UI.Button/ButtonClickedEvent UnityEngine.UI.Button::get_onClick()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline (Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Events.UnityAction::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131 (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Events.UnityEvent::AddListener(UnityEngine.Events.UnityAction)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302 (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* __this, UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___0_call, const RuntimeMethod* method) ;
 // System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57 (RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ___0_handle, const RuntimeMethod* method) ;
 // UnityEngine.Component[] UnityEngine.Component::GetComponentsInChildren(System.Type,System.Boolean)
@@ -8322,8 +8682,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LineRenderer_SetPosition_m84C4AD9ADC6AC62B33DB4D7E4C9F066DFF8440C1 (LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* __this, int32_t ___0_index, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_position, const RuntimeMethod* method) ;
 // System.Void LaserPointer::UpdateLaserBeam(UnityEngine.Vector3,UnityEngine.Vector3)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LaserPointer_UpdateLaserBeam_mB2574727D3FF064F1DC35F66637B139057F14F24 (LaserPointer_t0E77E38E488CC0E97D2E29F61CA3422430FEB874* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_start, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_end, const RuntimeMethod* method) ;
-// UnityEngine.Transform UnityEngine.GameObject::get_transform()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::op_Multiply(System.Single,UnityEngine.Vector3)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline (float ___0_d, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_a, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::op_Addition(UnityEngine.Vector3,UnityEngine.Vector3)
@@ -9145,8 +9503,6 @@ inline bool List_1_Remove_mFB320CE38ADF699E608E47F454402EDB77BC37CE (List_1_t5ED
 {
 	return ((  bool (*) (List_1_t5ED555E220A2C0CA4F1CC393401AF0D7BA5B456B*, RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5*, const RuntimeMethod*))List_1_Remove_m4DFA48F4CEB9169601E75FC28517C5C06EFA5AD7_gshared)(__this, ___0_item, method);
 }
-// System.Void UnityEngine.Transform::SetParent(UnityEngine.Transform)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_p, const RuntimeMethod* method) ;
 // System.Void DebugUIBuilder/OnSlider::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OnSlider__ctor_m24779158A203C374C64E268FD7D42DEF3BC7879D (OnSlider_t0D96B212C4F64F40984BF471CF31E5B4F2449567* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // UnityEngine.RectTransform DebugUIBuilder::AddSlider(System.String,System.Single,System.Single,DebugUIBuilder/OnSlider,System.Boolean,System.Int32)
@@ -9243,6 +9599,101 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void FloorSetup::SetupFloor(UnityEngine.GameObject,Oculus.Interaction.RayInteractable)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FloorSetup_SetupFloor_m8291BB306C53C511000F83B179B732EA6A4E0B0C (FloorSetup_t4C79DCDD91C3FC9D648B7D9BF9E76AEB353FA722* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_floor, RayInteractable_t919CD322CF95146C13694BED1AA08416B90BA02C* ___1_rayInteractable, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&FloorSetup_U3CSetupFloorU3Eb__2_0_mBFF7E538DBEC2EB12AD2D9D8C6EA7FB67429A0AF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RayMovement_EnableRayInteractableScript_mBDC68A9C2334F8C86508E7652D5D0319312DFBF2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// this.transform.SetParent(floor.transform.parent);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = ___0_floor;
+		NullCheck(L_1);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_1, NULL);
+		NullCheck(L_2);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E(L_2, NULL);
+		NullCheck(L_0);
+		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_0, L_3, NULL);
+		// _eventWrapper.InjectInteractableView(rayInteractable);
+		InteractableUnityEventWrapper_t799E6CF74F401DEEF895AAE3B240219D69349740* L_4 = __this->____eventWrapper_4;
+		RayInteractable_t919CD322CF95146C13694BED1AA08416B90BA02C* L_5 = ___1_rayInteractable;
+		NullCheck(L_4);
+		InteractableUnityEventWrapper_InjectInteractableView_m3D2245878AE5232095CF4458E71E58A8B82BA454(L_4, L_5, NULL);
+		// _eventWrapper.WhenSelect.AddListener(_rayMovement.EnableRayInteractableScript);
+		InteractableUnityEventWrapper_t799E6CF74F401DEEF895AAE3B240219D69349740* L_6 = __this->____eventWrapper_4;
+		NullCheck(L_6);
+		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_7;
+		L_7 = InteractableUnityEventWrapper_get_WhenSelect_m67ECF4E52B66F1423581451764E1EBA24AFCF1E4_inline(L_6, NULL);
+		RayMovement_t00333377EE9BE92ECCB994F344E78B3AF7CD4BA9* L_8 = __this->____rayMovement_5;
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_9 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_9);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_9, L_8, (intptr_t)((void*)RayMovement_EnableRayInteractableScript_mBDC68A9C2334F8C86508E7652D5D0319312DFBF2_RuntimeMethod_var), NULL);
+		NullCheck(L_7);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_7, L_9, NULL);
+		// _eventWrapper.WhenSelect.AddListener((() => _rayMovement.GetComponent<RayMovement>().GetRayCastHitPoint(_rayMovement.GetComponent<RayInteractor>())));
+		InteractableUnityEventWrapper_t799E6CF74F401DEEF895AAE3B240219D69349740* L_10 = __this->____eventWrapper_4;
+		NullCheck(L_10);
+		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_11;
+		L_11 = InteractableUnityEventWrapper_get_WhenSelect_m67ECF4E52B66F1423581451764E1EBA24AFCF1E4_inline(L_10, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_12 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_12);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_12, __this, (intptr_t)((void*)FloorSetup_U3CSetupFloorU3Eb__2_0_mBFF7E538DBEC2EB12AD2D9D8C6EA7FB67429A0AF_RuntimeMethod_var), NULL);
+		NullCheck(L_11);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_11, L_12, NULL);
+		// }
+		return;
+	}
+}
+// System.Void FloorSetup::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FloorSetup__ctor_mAFCBD0CF6CF685344702D4012242A6A63CFA0C90 (FloorSetup_t4C79DCDD91C3FC9D648B7D9BF9E76AEB353FA722* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+// System.Void FloorSetup::<SetupFloor>b__2_0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FloorSetup_U3CSetupFloorU3Eb__2_0_mBFF7E538DBEC2EB12AD2D9D8C6EA7FB67429A0AF (FloorSetup_t4C79DCDD91C3FC9D648B7D9BF9E76AEB353FA722* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisRayInteractor_tD2791AEFB83F0FF9724716F9EAA2592460ECD8C9_mC6804B34C2174238B6092929FBC4E29DC551FE57_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisRayMovement_t00333377EE9BE92ECCB994F344E78B3AF7CD4BA9_m7A2C64BFA300246560BC75E415FCD29409590DF2_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// _eventWrapper.WhenSelect.AddListener((() => _rayMovement.GetComponent<RayMovement>().GetRayCastHitPoint(_rayMovement.GetComponent<RayInteractor>())));
+		RayMovement_t00333377EE9BE92ECCB994F344E78B3AF7CD4BA9* L_0 = __this->____rayMovement_5;
+		NullCheck(L_0);
+		RayMovement_t00333377EE9BE92ECCB994F344E78B3AF7CD4BA9* L_1;
+		L_1 = Component_GetComponent_TisRayMovement_t00333377EE9BE92ECCB994F344E78B3AF7CD4BA9_m7A2C64BFA300246560BC75E415FCD29409590DF2(L_0, Component_GetComponent_TisRayMovement_t00333377EE9BE92ECCB994F344E78B3AF7CD4BA9_m7A2C64BFA300246560BC75E415FCD29409590DF2_RuntimeMethod_var);
+		RayMovement_t00333377EE9BE92ECCB994F344E78B3AF7CD4BA9* L_2 = __this->____rayMovement_5;
+		NullCheck(L_2);
+		RayInteractor_tD2791AEFB83F0FF9724716F9EAA2592460ECD8C9* L_3;
+		L_3 = Component_GetComponent_TisRayInteractor_tD2791AEFB83F0FF9724716F9EAA2592460ECD8C9_mC6804B34C2174238B6092929FBC4E29DC551FE57(L_2, Component_GetComponent_TisRayInteractor_tD2791AEFB83F0FF9724716F9EAA2592460ECD8C9_mC6804B34C2174238B6092929FBC4E29DC551FE57_RuntimeMethod_var);
+		NullCheck(L_1);
+		RayMovement_GetRayCastHitPoint_mE2CD1CFE50459E74AEC9C8A8A9715F757F311D62(L_1, L_3, NULL);
+		return;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -29083,6 +29534,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterCapsule__ctor_m16F3AD31225C91BC
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* InteractableUnityEventWrapper_get_WhenSelect_m67ECF4E52B66F1423581451764E1EBA24AFCF1E4_inline (InteractableUnityEventWrapper_t799E6CF74F401DEEF895AAE3B240219D69349740* __this, const RuntimeMethod* method) 
+{
+	{
+		// public UnityEvent WhenSelect => _whenSelect;
+		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_0 = __this->____whenSelect_8;
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Quaternion_get_eulerAngles_m2DB5158B5C3A71FD60FC8A6EE43D3AAA1CFED122_inline (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* __this, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;

@@ -14,13 +14,19 @@ public class ModelPersonalization : MonoBehaviour
     [SerializeField] private Transform _basePoint;
     //[SerializeField] private GameObject _rotationCanvas;
     private GameObject handRayInteractor;
+    //private GameObject handRayInteractorRight;
     private GameObject _menuManager;
+    //private RayMovement _rayMovementLeft;
+    //private RayMovement _rayMovementRight;
 
 
     private void Start()
     {
         _player = GameObject.FindWithTag("Player");
         handRayInteractor = GameObject.FindWithTag("HandRayInteractor");
+        //_rayMovementLeft = handRayInteractorLeft.GetComponent<RayMovement>();
+        //handRayInteractorRight = GameObject.FindWithTag("HandRayInteractorRight");
+        //_rayMovementRight = handRayInteractorRight.GetComponent<RayMovement>();
         _menuManager = GameObject.FindWithTag("MenuManager");
     }
 
@@ -39,6 +45,11 @@ public class ModelPersonalization : MonoBehaviour
         print("Object to Spawn: " + parentGameObject.name);
         handRayInteractor.GetComponent<RayMovement>().SelectObject(parentGameObject);
     }
+
+    //public void GetHand(RayInteractor rayInteractor)
+    //{
+        //rayInteractor.GetComponent<OVRHand.Hand>().
+    //}
     public void ChangeColor()
     {
         material.color = new Color(_sliders[0].value, _sliders[1].value, _sliders[2].value);

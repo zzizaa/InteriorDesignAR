@@ -6,6 +6,9 @@ TagManager:
   tags:
   - HandRayInteractor
   - MenuManager
+  - FloorInteractable
+  - HandRayInteractorRight
+  - HandRayInteractorLeft
   layers:
   - Default
   - TransparentFX

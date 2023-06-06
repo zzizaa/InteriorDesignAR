@@ -3398,6 +3398,11 @@ struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t
 {
 };
 
+// UnityEngine.Events.UnityAction
+struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7  : public MulticastDelegate_t
+{
+};
+
 // TMPro.WordWrapState
 struct WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A 
 {
@@ -6199,6 +6204,10 @@ struct Type_t_StaticFields
 
 // UnityEngine.Transform
 
+// UnityEngine.Events.UnityAction
+
+// UnityEngine.Events.UnityAction
+
 // UnityEngine.Camera
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_StaticFields
 {
@@ -8135,6 +8144,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* InteractableUnityEventWrapper_get_WhenSelectingInteractorViewAdded_mDB5891783DFC6110D1FE68C34A46D7DCBB9E592B_inline (InteractableUnityEventWrapper_t799E6CF74F401DEEF895AAE3B240219D69349740* __this, const RuntimeMethod* method) ;
 // UnityEngine.Events.UnityEvent Oculus.Interaction.InteractableUnityEventWrapper::get_WhenSelectingInteractorViewRemoved()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* InteractableUnityEventWrapper_get_WhenSelectingInteractorViewRemoved_mBECFBE17851E3BCCCEBC890644086EDA27DD0D58_inline (InteractableUnityEventWrapper_t799E6CF74F401DEEF895AAE3B240219D69349740* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Events.UnityEvent::AddListener(UnityEngine.Events.UnityAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302 (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* __this, UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___0_call, const RuntimeMethod* method) ;
 // System.Void Oculus.Interaction.InteractableUnityEventWrapper::InjectInteractableView(Oculus.Interaction.IInteractableView)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractableUnityEventWrapper_InjectInteractableView_m3D2245878AE5232095CF4458E71E58A8B82BA454 (InteractableUnityEventWrapper_t799E6CF74F401DEEF895AAE3B240219D69349740* __this, RuntimeObject* ___0_interactableView, const RuntimeMethod* method) ;
 // Oculus.Interaction.InteractorState Oculus.Interaction.InteractorStateChangeArgs::get_NewState()
@@ -25124,6 +25135,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractableUnityEventWrapper_HandleSele
 		L_0 = InteractableUnityEventWrapper_get_WhenSelectingInteractorViewRemoved_mBECFBE17851E3BCCCEBC890644086EDA27DD0D58_inline(__this, NULL);
 		NullCheck(L_0);
 		UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2(L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Oculus.Interaction.InteractableUnityEventWrapper::AddSelectListener(UnityEngine.Events.UnityAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractableUnityEventWrapper_AddSelectListener_m7BE4E91693AA38343A010D17BE555078C4B135EB (InteractableUnityEventWrapper_t799E6CF74F401DEEF895AAE3B240219D69349740* __this, UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___0_listener, const RuntimeMethod* method) 
+{
+	{
+		// _whenSelect.AddListener(listener);
+		UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* L_0 = __this->____whenSelect_8;
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_1 = ___0_listener;
+		NullCheck(L_0);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_0, L_1, NULL);
 		// }
 		return;
 	}

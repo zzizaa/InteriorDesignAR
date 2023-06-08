@@ -97,7 +97,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: dd331cc38e3258643bf0d3d221718362, type: 2}
     - target: {fileID: 2245268756432684843, guid: b679495352b23b7459854a200338c1b6, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2245268756432684843, guid: b679495352b23b7459854a200338c1b6, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -108,7 +108,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2245268756432684843, guid: b679495352b23b7459854a200338c1b6, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2245268756432684843, guid: b679495352b23b7459854a200338c1b6, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6670952242589090640}
+    - target: {fileID: 2245268756432684843, guid: b679495352b23b7459854a200338c1b6, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 6670952242589090640}
     - target: {fileID: 2245268756432684843, guid: b679495352b23b7459854a200338c1b6, type: 3}
@@ -116,11 +124,27 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2245268756432684843, guid: b679495352b23b7459854a200338c1b6, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2245268756432684843, guid: b679495352b23b7459854a200338c1b6, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GetMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 2245268756432684843, guid: b679495352b23b7459854a200338c1b6, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterialOnSelection
+      objectReference: {fileID: 0}
+    - target: {fileID: 2245268756432684843, guid: b679495352b23b7459854a200338c1b6, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: DisableRayInteractableScript
       objectReference: {fileID: 0}
     - target: {fileID: 2245268756432684843, guid: b679495352b23b7459854a200338c1b6, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: ModelPersonalization, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2245268756432684843, guid: b679495352b23b7459854a200338c1b6, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: ModelPersonalization, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2245268756432684843, guid: b679495352b23b7459854a200338c1b6, type: 3}
@@ -135,10 +159,18 @@ PrefabInstance:
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2245268756432684843, guid: b679495352b23b7459854a200338c1b6, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7046921069052166076, guid: b679495352b23b7459854a200338c1b6, type: 3}
       propertyPath: _material
       value: 
       objectReference: {fileID: 2100000, guid: 5dce1f8fd86e04f42a922b7a3ce2a2a7, type: 2}
+    - target: {fileID: 7046921069052166076, guid: b679495352b23b7459854a200338c1b6, type: 3}
+      propertyPath: _editingMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 3125751b0b6042c4b976b462749bf59f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b679495352b23b7459854a200338c1b6, type: 3}
 --- !u!4 &3481948351971663264 stripped

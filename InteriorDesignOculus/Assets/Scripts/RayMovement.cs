@@ -12,6 +12,10 @@ public class RayMovement : MonoBehaviour
     [SerializeField] private ColliderSurface _floorSurface;
     [SerializeField] private RayInteractor _rayInteractor;
     public RayInteractable _rayInteractableComponent;
+    private bool _isEditingMode;
+    [SerializeField] private MenuManager _menuManager;
+    [SerializeField] private GameObject _editingMenu;
+    [SerializeField] private GameObject _modelMenu;
 
     private void Start()
     {
@@ -23,10 +27,15 @@ public class RayMovement : MonoBehaviour
         MoveSelectedObject();
     }
 
-    public void SelectObject(GameObject model)
+    public void SelectObject(GameObject model, bool isEditingMode)
     {
         print("Oggetto selezionato " + model.name);
+        _isEditingMode = isEditingMode;
         _modelToMove = model;
+        if (_isEditingMode)
+        {
+            ActivateEditCanvas();
+        }
         print("Oggetto assegnato " + _modelToMove.name);
         //_selectHand.isLeftHand = true;
     }
@@ -56,7 +65,7 @@ public class RayMovement : MonoBehaviour
     }
     private void MoveSelectedObject()
     {
-        if (_modelToMove == null) return;
+        if (_modelToMove == null || _isEditingMode) return;
         else if (_rayInteractor.CollisionInfo.HasValue)
         {
             _modelToMove.transform.position = _rayInteractor.CollisionInfo.Value.Point;
@@ -66,7 +75,7 @@ public class RayMovement : MonoBehaviour
     {
         //Spostare definitivamente il modello nel punto scelto 
         print("RAYCAST POINT: " + _rayInteractor.CollisionInfo.Value.Point);
-        if (_modelToMove == null) return;
+        if (_modelToMove == null || _isEditingMode) return;
         else
         {
             _modelToMove.transform.position = rayInteractor.CollisionInfo.Value.Point;
@@ -82,5 +91,10 @@ public class RayMovement : MonoBehaviour
     {
         _modelToMove.GetComponentInChildren<ModelPersonalization>().ChangeMaterialOnPositioning();
     }
-    
+
+    private void ActivateEditCanvas()
+    {
+        _menuManager.ActivateMenu(_editingMenu);
+        _menuManager.DeactivateMenu(_modelMenu);
+    }
 }

@@ -9,6 +9,7 @@ TagManager:
   - FloorInteractable
   - HandRayInteractorRight
   - HandRayInteractorLeft
+  - ModeManager
   layers:
   - Default
   - TransparentFX

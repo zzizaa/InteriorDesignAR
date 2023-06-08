@@ -9,13 +9,18 @@ public class ModelPersonalization : MonoBehaviour
     //[SerializeField] private GameObject _canvas;
      public Material material;
     [SerializeField] private Material _selectedMaterial;
+    [SerializeField] private Material _editingMaterial;
     [SerializeField] private List<Slider> _sliders;
     [SerializeField] private GameObject _player;
     [SerializeField] private Transform _basePoint;
     //[SerializeField] private GameObject _rotationCanvas;
     private GameObject handRayInteractor;
+
+    private Material _baseMaterial;
     //private GameObject handRayInteractorRight;
     private GameObject _menuManager;
+
+    private GameObject _modeManager;
     //private RayMovement _rayMovementLeft;
     //private RayMovement _rayMovementRight;
 
@@ -24,6 +29,7 @@ public class ModelPersonalization : MonoBehaviour
     {
         _player = GameObject.FindWithTag("Player");
         handRayInteractor = GameObject.FindWithTag("HandRayInteractor");
+        _modeManager = GameObject.FindWithTag("ModeManager");
         //_rayMovementLeft = handRayInteractorLeft.GetComponent<RayMovement>();
         //handRayInteractorRight = GameObject.FindWithTag("HandRayInteractorRight");
         //_rayMovementRight = handRayInteractorRight.GetComponent<RayMovement>();
@@ -43,13 +49,13 @@ public class ModelPersonalization : MonoBehaviour
     public void SelectObject(GameObject parentGameObject)
     {
         print("Object to Spawn: " + parentGameObject.name);
-        handRayInteractor.GetComponent<RayMovement>().SelectObject(parentGameObject);
+        handRayInteractor.GetComponent<RayMovement>().SelectObject(parentGameObject, _modeManager.GetComponent<SwitchMode>().editingMode);
     }
 
-    //public void GetHand(RayInteractor rayInteractor)
-    //{
-        //rayInteractor.GetComponent<OVRHand.Hand>().
-    //}
+    public void GetMaterial()
+    {
+        _baseMaterial = gameObject.GetComponent<MeshRenderer>().materials[0];
+    }
     public void ChangeColor()
     {
         material.color = new Color(_sliders[0].value, _sliders[1].value, _sliders[2].value);
@@ -62,12 +68,22 @@ public class ModelPersonalization : MonoBehaviour
     }
     public void ChangeMaterialOnSelection()
     {
-        gameObject.GetComponent<MeshRenderer>().material = _selectedMaterial;
-        //When selected the model should change material
-        //Get all childrens with a Mesh Renderer and change all the materials    
-        MeshRenderer[] rs = GetComponentsInChildren<MeshRenderer>();
-        foreach(MeshRenderer r in rs)
-            r.material = _selectedMaterial;
+        if (_modeManager.GetComponent<SwitchMode>().editingMode)
+        {
+            gameObject.GetComponent<MeshRenderer>().material = _editingMaterial;
+            MeshRenderer[] rs1 = GetComponentsInChildren<MeshRenderer>();
+            foreach(MeshRenderer r in rs1)
+                r.material = _editingMaterial;
+        }
+        else
+        {
+            gameObject.GetComponent<MeshRenderer>().material = _selectedMaterial;
+            //When selected the model should change material
+            //Get all childrens with a Mesh Renderer and change all the materials    
+            MeshRenderer[] rs2 = GetComponentsInChildren<MeshRenderer>();
+            foreach(MeshRenderer r in rs2)
+                r.material = _selectedMaterial;
+        }
     }
 
     public void ChangeMaterialOnPositioning()
@@ -75,11 +91,13 @@ public class ModelPersonalization : MonoBehaviour
         //ERRORE: quando si seleziona un altra sedia riposizionandala prenderà il materiale dell'ultima sedia fatta spawnare
         //SOLUZIONE: quando un modella viene selezionato estrarne i materiali e poi riapplicarli
         //Reselect the main material of the model
-        gameObject.GetComponent<MeshRenderer>().material = _menuManager.GetComponent<MenuManager>().choosedMaterial;
+        gameObject.GetComponent<MeshRenderer>().material = _baseMaterial;
+        //gameObject.GetComponent<MeshRenderer>().material = _menuManager.GetComponent<MenuManager>().choosedMaterial;
         //Reset all the materials for all childrens
         MeshRenderer[] rs = GetComponentsInChildren<MeshRenderer>();
-        foreach(MeshRenderer r in rs)
-            r.material = _menuManager.GetComponent<MenuManager>().choosedMaterial;
+        foreach (MeshRenderer r in rs)
+            //r.material = _menuManager.GetComponent<MenuManager>().choosedMaterial;
+            r.material = _baseMaterial;
     }
 
     public void DisableRayInteractableScript()

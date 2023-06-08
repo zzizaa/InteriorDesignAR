@@ -10,6 +10,10 @@ public class SwitchMode : MonoBehaviour
    [SerializeField] private GameObject _rightHand;
    [SerializeField] private Material _editMaterial;
    [SerializeField] private Material _baseMaterial;
+
+   [SerializeField] private MenuManager _menuManager;
+   [SerializeField] private GameObject _editMenu;
+   [SerializeField] private GameObject _modelMenu;
    
    public void ChangeMode()
    {
@@ -28,6 +32,13 @@ public class SwitchMode : MonoBehaviour
       {
          _leftHand.GetComponent<SkinnedMeshRenderer>().material = new Material(_baseMaterial);
          _rightHand.GetComponent<SkinnedMeshRenderer>().material = new Material(_baseMaterial);
+         ResetMenu();
       }
+   }
+
+   private void ResetMenu()
+   {
+      _menuManager.ActivateMenu(_modelMenu);
+      _menuManager.DeactivateMenu(_editMenu);
    }
 }

@@ -674,7 +674,7 @@ GameObject:
   - component: {fileID: 773440901}
   m_Layer: 0
   m_Name: Poses
-  m_TagString: Untagged
+  m_TagString: ModeManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -696,6 +696,9 @@ MonoBehaviour:
   _rightHand: {fileID: 5724819077755362328}
   _editMaterial: {fileID: 2100000, guid: 4879217db090c4849aa0bd7d31cb234e, type: 2}
   _baseMaterial: {fileID: 2100000, guid: d641a50c4fe4ee3489a64cf52b76ae79, type: 2}
+  _menuManager: {fileID: 1546455372}
+  _editMenu: {fileID: 2054597969}
+  _modelMenu: {fileID: 1146691242}
 --- !u!4 &773440902
 Transform:
   m_ObjectHideFlags: 0
@@ -818,6 +821,11 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5724819077729996792, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
   m_PrefabInstance: {fileID: 5724819077755362324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1146691242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 574674843, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+  m_PrefabInstance: {fileID: 1353637273}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1320438842
 GameObject:
@@ -1887,6 +1895,11 @@ Transform:
   m_Father: {fileID: 728432007}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2054597969 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7353371327769045731, guid: d6733f35cecdc984c9d50925eb25939e, type: 3}
+  m_PrefabInstance: {fileID: 1353637273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2424972279499376380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2412,9 +2425,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1489495412}
     - target: {fileID: 5724819078917629567, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
+      propertyPath: _modelMenu
+      value: 
+      objectReference: {fileID: 1146691242}
+    - target: {fileID: 5724819078917629567, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
       propertyPath: _selectHand
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5724819078917629567, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
+      propertyPath: _editingMenu
+      value: 
+      objectReference: {fileID: 2054597969}
+    - target: {fileID: 5724819078917629567, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
+      propertyPath: _menuManager
+      value: 
+      objectReference: {fileID: 1546455372}
     - target: {fileID: 5724819078917629567, guid: 08038722daff4394dbbaecd9b2517621, type: 3}
       propertyPath: _floorSurface
       value: 

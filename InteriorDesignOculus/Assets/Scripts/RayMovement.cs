@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Oculus.Interaction;
 using Oculus.Interaction.Surfaces;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class RayMovement : MonoBehaviour
 {
@@ -13,13 +14,14 @@ public class RayMovement : MonoBehaviour
     [SerializeField] private RayInteractor _rayInteractor;
     public RayInteractable _rayInteractableComponent;
     private bool _isEditingMode;
+    private readonly float rotationLimit = 180f;
     [SerializeField] private MenuManager _menuManager;
     [SerializeField] private GameObject _editingMenu;
     [SerializeField] private GameObject _modelMenu;
 
     private void Start()
     {
-        //GetHand();
+       print("RAYMOVEMENTEXIST");
     }
 
     private void Update()
@@ -32,6 +34,7 @@ public class RayMovement : MonoBehaviour
         print("Oggetto selezionato " + model.name);
         _isEditingMode = isEditingMode;
         _modelToMove = model;
+        
         if (_isEditingMode)
         {
             ActivateEditCanvas();
@@ -71,14 +74,14 @@ public class RayMovement : MonoBehaviour
             _modelToMove.transform.position = _rayInteractor.CollisionInfo.Value.Point;
         }
     }
-    public void GetRayCastHitPoint(RayInteractor rayInteractor)
+    public void GetRayCastHitPoint()
     {
         //Spostare definitivamente il modello nel punto scelto 
-        print("RAYCAST POINT: " + _rayInteractor.CollisionInfo.Value.Point);
+        //print("RAYCAST POINT: " + _rayInteractor.CollisionInfo.Value.Point);
         if (_modelToMove == null || _isEditingMode) return;
-        else
+        else if (_rayInteractor.CollisionInfo.HasValue)
         {
-            _modelToMove.transform.position = rayInteractor.CollisionInfo.Value.Point;
+            _modelToMove.transform.position = _rayInteractor.CollisionInfo.Value.Point;
             print("POSIZIONE DEL MODELLO: " + _modelToMove.transform.position);
             ResetMaterial();
             DeselectObject();
@@ -86,7 +89,32 @@ public class RayMovement : MonoBehaviour
             //_modelToMove.transform.position = _rayInteractor.CollisionInfo.Value.Point;
         }
     }
+    
+    //Methods for Editing Mode
+    public void RotateModel(float degree)
+    {
+        _modelToMove.transform.localEulerAngles = new Vector3(0, degree * rotationLimit, 0);
+    }
 
+    public void ScaleModel(float scaling)
+    {
+        float remappedValue = RemapValue(scaling, -1f, 1f, 0.8f, 1.2f);
+        _modelToMove.transform.localScale = new Vector3(remappedValue, remappedValue, remappedValue);
+    }
+
+    public void TranslateModel()
+    {
+        
+    }
+
+    float RemapValue(float value, float inputMin, float inputMax, float outputMin, float outputMax)
+    {
+        float inputRange = inputMax - inputMin;
+        float outputRange = outputMax - outputMin;
+        float normalizedValue = (value - inputMin) / inputRange;
+        float remappedValue = outputMin + (normalizedValue * outputRange);
+        return remappedValue;
+    }
     public void ResetMaterial()
     {
         _modelToMove.GetComponentInChildren<ModelPersonalization>().ChangeMaterialOnPositioning();

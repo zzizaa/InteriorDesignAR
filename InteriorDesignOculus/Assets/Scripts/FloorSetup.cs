@@ -11,8 +11,8 @@ public class FloorSetup : MonoBehaviour
     {
         gameObject.transform.SetParent(floor.transform.parent);
         _eventWrapper.InjectInteractableView(rayInteractable);
-        //_eventWrapper.WhenSelect.AddListener(_rayMovement.EnableRayInteractableScript);
+        _eventWrapper.WhenSelect.AddListener(_rayMovement.EnableRayInteractableScript);
         //_eventWrapper.WhenSelect.AddListener((() => _rayMovement.EnableRayInteractableScript()));
-        //_eventWrapper.WhenSelect.AddListener((() => _rayMovement.GetComponent<RayMovement>().GetRayCastHitPoint(_rayMovement.GetComponent<RayInteractor>())));
+        _eventWrapper.WhenSelect.AddListener(_rayMovement.GetComponent<RayMovement>().GetRayCastHitPoint);
     }
 }
